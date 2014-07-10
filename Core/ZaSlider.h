@@ -18,6 +18,7 @@
 namespace bbcubezone {
 
 class ZaSlider: public bbcubezone::ZaObj {
+
 public:
 	ZaSlider();
 	void drawControl();
@@ -27,6 +28,7 @@ public:
 	ZAImage * m_img;
 	ZaLabel * m_lb;
 	virtual ~ZaSlider();
+
 };
 
 } /* namespace bbcubezone */
