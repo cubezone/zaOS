@@ -27,7 +27,6 @@ int ZaMPG123::init()
 	}
 	return 0;
 }
-
 int ZaMPG123::run()
 {
 	ALuint g_Buffers[NUM_BUFFERS];
@@ -194,7 +193,6 @@ int ZaMPG123::run()
 
 	return 0;
 }
-
 ZaMPG123::~ZaMPG123()
 {
 	// TODO Auto-generated destructor stub
