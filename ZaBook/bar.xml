@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<qnx xmlns="http://www.qnx.com/schemas/application/1.0">
+
+<!-- BlackBerry庐 10 application descriptor file.
+
+    Specifies parameters for identifying, installing, and launching native applications on BlackBerry庐 10 OS.
+-->
+
+	<!-- 修改 <id> ZaBook 102 -->
+	<!-- 修改 <name> ZaBook -->
+	<!-- 修改 <asset path="book102"> -->
+ 	<!-- 导出修改  basefilename ID -->	
+ 	
+	<!--
+	101 隋唐演义 Sui Tang Yan Yi
+   	102 百年风云 Bai Nian Feng Yun
+   	103 大明英烈 Da Ming Ying Lie
+   	104 大元义侠 DaYuanYiXia
+   	105 红楼梦 A Dream of Red Mansions
+   	106 孙子兵法 The Art of War 
+   	107 傲慢与偏见 Pride and Prejudice 
+   	
+   	
+   	108 邦斯舅舅 Cousin Pons 
+   	109 包法利夫人 Emma Bovary 
+   	110 悲惨世界 The Miserable World
+   	111 茶花女 The Lady of the Camellias
+   	112 浮士德 Faust
+   	113 父与子 Father and son
+    >>>>>>
+   	114 呼啸山庄 WutheringHeights
+   	115 鲁宾孙飘流记 Robinson Crusoe
+   	116 双城记 A tale of two cities
+   	117 唐璜 Don Giovanni 
+   	118 战争论 The Theory Of War
+   	119 政府论 Civil Government
+   	120 罪与罚 Murderer
+   	121 死魂灵 Dead Souls
+   	122 嘉莉妹妹 Sister Carrie 
+   	123 巴黎圣母院 Notre Dame De Paris
+   	124 汤姆大伯的小屋 Uncle Tom's Cabin
+   	
+   	125 四书五经合集 SiShuWuJing
+   	126 君王论 The Prince
+   	127 雷雨 Lei Yu
+   	128 复活 RESURRECTION 
+   	129 老人与海 The Old Man and the Sea
+   	130 梦的解析 The Interpretation of Dreams
+   	131 格朗台 Grandet
+   	132 倾城之恋 Love in a Fallen
+   	133 苏菲的世界 Sophie's world
+   
+   >>>>>
+	150 三侠五义.epub SanXiaWuYi
+	151 三遂平妖传.epub SanSuiPingYaoZhuan
+	152 九尾龟.epub  JiuWeiGui
+	153 二十年目睹之怪现状.epub ErShiNianGuaiXianXiang
+	154 于公案.epub YuGongAn
+	155 儒林外史.epub RuLinWaiShi
+	156 再续小八义.epub ZaiXuXiaoBaYi
+	157 北史演义.epub BeiShiYanYi
+	158 南史演义.epub NanShiYanYi
+	159 大八义.epub DaBaYi
+	160 官场现形记.epub GuanChangXianXingJi
+	161 小八义.epub XiaoBaYi
+	
+	162 施公案.epub ShiGongAn
+	163 林公案.epub LinGongAn
+	164 残唐五代史演义.epub CanTangWuDaiShi
+	165 水浒后传.epub ShuiHuHouZhuan
+	166 续小八义.epub XuXiaoBaYi
+	167 花月痕.epub HuaYueHen
+	168 说唐三传.epub ShuoTangSanZhuan
+	169 说唐后传.epub ShuoTangShouZhuan
+	170 说岳全传.epub ShuoYueQuanZhuan
+	171 镜花缘.epub JingHuaYuan
+	172 隋唐两朝志传.epub SuiTangLiangChaoZhi
+	173 韩湘子全传.epub HanXiangZiZhuan
+	
+	
+	 174 三国史话.epub SanGuoShiHua
+	 175 二刻拍案惊奇.epub ErKePaiAnJingQi
+	 176 初刻拍案惊奇.epub ChuKePaiAnJingQi
+	 177 喻世明言.epub YuShiMingYan
+	 178 曾巩文集.epub ZengGongWenJi
+	 179 柳宗元文集.epub LiuZongYuanWenJi
+	 180 欧阳修文集.epub OuYangXiuWenJi
+	 181 王安石文集.epub WangAnShiWenJi
+	 182 苏洵文集.epub SuXunWenJi
+	 183 苏轼文集.epub SuShiWenJi	 
+	 184 苏辙文集.epub SuZheWenJi
+	 185 警世通言.epub JingShiTongYan
+	 186 醒世恒言.epub XingShiHongYan
+	 187 韩愈文集.epub HanYuWenJi
+
+none
+
+the content of this book is published before 1900. it is over 95 years copyright protection limit.
+
+worldwide
+   
+world famous novel in chinese
+
+one famous novel in chinese
+
+PLEASE NOTE
+the novel is in CHINESE LANGUAGE.
+
+ebook function.
+1 config font size
+2 many theme can be choosed.
+3 automatic bookmark.
+   
+   	-->
+   	
+    <!-- A universally unique application identifier. Must be unique across all BlackBerry applications.
+         Using a reverse DNS-style name as the id is recommended. (Eg. com.example.ExampleApplication.) Required. -->
+
+    <id>com.bbcubezone.ZaBook162</id>
+    <name>
+      	ShiGongAn
+       <text xml:lang="zh-CN">施公案</text>
+    </name>
+    <asset path="book162">book</asset>
+        	
+    <!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade. 
+         Values can also be 1-part or 2-part. It is not necessary to have a 3-part value.
+         An updated version of application must have a versionNumber value higher than the previous version. Required. -->
+    <versionNumber>1.100.0</versionNumber>
+    <packageLocale>zh-CN</packageLocale>
+    <buildId>302</buildId>
+
+    <!-- Fourth digit segment of the package version. First three segments are taken from the 
+         <versionNumber> element.  Must be an integer from 0 to 2^16-1 -->
+                 
+    <!-- Description, displayed in the BlackBerry application installer.
+         May have multiple values for each language. See samples or xsd schema file. Optional. -->
+    <description>
+       The ZaBook application
+       <text xml:lang="zh-CN">&#x7535;&#x5b50;&#x4e66;</text>
+    </description>
+
+    <!--  Name of author which is used for signing. Must match the developer name of your development certificate. -->
+    <author>bbcubezone</author>
+    <authorId>gYAAgBulAQq8nzUnxQjM5VgneIU</authorId>
+    
+    <!--  Unique author ID assigned by signing authority. Required if using debug tokens. -->
+    <!-- <authorId>ABC1234YjsnUk235h</authorId> -->
+   
+    <initialWindow>
+        <aspectRatio>portrait</aspectRatio>
+        <autoOrients>false</autoOrients>
+        <systemChrome>none</systemChrome>
+        <transparent>false</transparent>
+    </initialWindow>
+    
+    <!--  The category where the application appears. Either core.games or core.media. -->
+    <category>core.games</category>
+    <splashScreens>
+       <image>res/flash.jpg
+        <text xml:lang="zh-CN">res/flash.jpg</text>
+       </image>
+    </splashScreens>
+    
+    <icon>
+       <image>book/icon150.png
+         <text xml:lang="zh-CN">book/icon150.png</text>
+         </image>
+    </icon>
+   
+    <asset path="res">res</asset>
+    <configuration id="com.qnx.qcc.toolChain.1496276568" name="Default">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="arm/o.le-v7/ZaBook" entry="true" type="Qnx/Elf">ZaBook</asset>
+    </configuration>
+    <configuration id="com.qnx.qcc.toolChain.688765344" name="Device-Debug">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="arm/o.le-v7-g/ZaBook" entry="true" type="Qnx/Elf">ZaBook</asset>
+    </configuration>
+    <configuration id="com.qnx.qcc.toolChain.1618277905" name="Device-Release">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="arm/o.le-v7/ZaBook" entry="true" type="Qnx/Elf">ZaBook</asset>
+    </configuration>
+    <configuration id="com.qnx.qcc.toolChain.1268131317" name="Simulator-Debug">
+       <platformArchitecture>x86</platformArchitecture>
+       <asset path="x86/o-g/ZaBook" entry="true" type="Qnx/Elf">ZaBook</asset>
+    </configuration>
+    
+    <!--  The icon for the application, which should be 86x86. -->
+    
+    <!--  The splash screen that will appear when your application is launching. Should be 1024x600. -->
+    <!-- <splashscreen></splashscreen> -->
+
+    <!-- Request permission to execute native code.  Required for native applications. -->
+    <permission system="true">run_native</permission>
+    <permission>access_shared</permission>
+    
+    <!--  The permissions requested by your application. -->
+    <!--  <permission>access_shared</permission> -->
+    <!--  <permission>record_audio</permission> -->
+    <!--  <permission>read_geolocation</permission> -->
+    <!--  <permission>use_camera</permission> -->
+    <!--  <permission>access_internet</permission> -->
+    <!--  <permission>play_audio</permission> -->
+    <!--  <permission>post_notification</permission> -->
+    <!--  <permission>set_audio_volume</permission> -->
+    <!--  <permission>read_device_identifying_information</permission> -->
+    <!--  <permission>access_led_control</permission> -->
+    <!--  <action>run_when_backgrounded</action> -->
+    
+
+    <!-- Ensure that shared libraries in the package are found at run-time. -->
+    <env var="LD_LIBRARY_PATH" value="app/native/lib"/>
+    
+</qnx>

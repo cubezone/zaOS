@@ -1,0 +1,125 @@
+if [ $1 -eq 200 ]; then
+vid=$1
+vcname="万历十五年"
+vename="WanLiWuQianNian"
+fi
+if [ $1 -eq 201 ]; then
+vid=$1
+vcname="中国佛教发展史略"
+vename="ZhongGuoFouJiao"
+fi
+if [ $1 -eq 202 ]; then
+vid=$1
+vcname="中国大历史"
+vename="ZhongGuoDaLiShi"
+fi
+if [ $1 -eq 203 ]; then
+vid=$1
+vcname="中国建筑史"
+vename="ZhongGuoJianZhu"
+fi
+if [ $1 -eq 204 ]; then
+vid=$1
+vcname="了凡四训"
+vename="ZiFanSiXun"
+fi
+if [ $1 -eq 205 ]; then
+vid=$1
+vcname="人间词话"
+vename="RenJianCiHua"
+fi
+if [ $1 -eq 206 ]; then
+vid=$1
+vcname="吕著中国通史"
+vename="LuZhouTongShi"
+fi
+if [ $1 -eq 207 ]; then
+vid=$1
+vcname="处世悬镜"
+vename="ChuShiXuanJing"
+fi
+if [ $1 -eq 208 ]; then
+vid=$1
+vcname="天工开物"
+vename="TianGongKaiWu"
+fi
+if [ $1 -eq 209 ]; then
+vid=$1
+vcname="小窗幽记"
+vename="XiaoChuangYouJing"
+fi
+if [ $1 -eq 210 ]; then
+vid=$1
+vcname="山海经"
+vename="ShanHaiJing"
+fi
+if [ $1 -eq 211 ]; then
+vid=$1
+vcname="弟子规"
+vename="DiZiGui"
+fi
+if [ $1 -eq 212 ]; then
+vid=$1
+vcname="易经"
+vename="YiJing"
+fi
+if [ $1 -eq 213 ]; then
+vid=$1
+vcname="李白诗全集"
+vename="LiBaiShiQuanJi"
+fi
+if [ $1 -eq 214 ]; then
+vid=$1
+vcname="浮生六记"
+vename="FuShengLiuJi"
+fi
+if [ $1 -eq 215 ]; then
+vid=$1
+vcname="禅宗与道家"
+vename="ChanZongYuDaoJia"
+fi
+if [ $1 -eq 216 ]; then
+vid=$1
+vcname="禅观正脉研究"
+vename="ChanGuanZengMai"
+fi
+if [ $1 -eq 217 ]; then
+vid=$1
+vcname="简爱"
+vename="JianAi"
+fi
+if [ $1 -eq 218 ]; then
+vid=$1
+vcname="羊脂球"
+vename="YangZhiQiu"
+fi
+if [ $1 -eq 219 ]; then
+vid=$1
+vcname="边城"
+vename="BianCheng"
+fi
+if [ $1 -eq 220 ]; then
+vid=$1
+vcname="道家密宗与东方神秘学"
+vename="DaoJiaMiZong"
+fi
+if [ $1 -eq 221 ]; then
+vid=$1
+vcname="金刚经说什么"
+vename="JinGangJing"
+fi
+if [ $1 -eq 222 ]; then
+vid=$1
+vcname="骆驼祥子"
+vename="LuoTuoXiangZi"
+fi
+if [ $1 -eq 223 ]; then
+vid=$1
+vcname="鬼神传"
+vename="GuiShenZhuan"
+fi
+if [ $1 -eq 224 ]; then
+vid=$1
+vcname="黄帝内经"
+vename="HuanDiNeiJing"
+fi
