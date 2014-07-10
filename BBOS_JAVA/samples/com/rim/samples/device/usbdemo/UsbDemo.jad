@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: UsbDemo
+RIM-COD-Module-Dependencies: net_rim_cldc
+MIDlet-Jar-Size: 21000
+MIDlet-1: Usb Demo,img/usbdemo_jde.png,
+RIM-COD-Creation-Time: 1278860561
+MIDlet-Jar-URL: UsbDemo.jar
+RIM-COD-URL: UsbDemo.cod
+RIM-COD-SHA1: 5b 46 bc 0f 90 23 80 c8 d8 0c 1b 86 f3 52 42 1b b2 ec a9 69
+RIM-COD-Size: 11576
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.0
+MIDlet-Name: UsbDemo
+MIDlet-Vendor: <unknown>
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+MIDlet-Version: 0.0
+MIDlet-Jar-Size: 19618
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: LocalizationDemo.jar
+RIM-COD-Module-Dependencies: net_rim_cldc
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Module-Name: localizationdemo
+MIDlet-Name: LocalizationDemo
+RIM-COD-Size: 13116
+RIM-COD-Creation-Time: 1278860491
+MIDlet-1: Localization Demo,img/localizationdemo_jde.png,
+RIM-COD-URL: localizationdemo.cod
+RIM-MIDlet-NameResourceId-1: 0
+RIM-COD-SHA1: 00 19 ab 65 3b 05 61 a8 db 4c 48 f9 d7 a4 7e ac a8 0c f5 67
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: <unknown>
+RIM-MIDlet-NameResourceBundle-1: com.rim.samples.device.localizationdemo.LocalizationDemo

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: a_sms
+RIM-COD-Module-Dependencies: net_rim_cldc
+MIDlet-Jar-Size: 38388
+MIDlet-1: ChinaSms,,
+RIM-COD-Creation-Time: 1282967702
+MIDlet-Jar-URL: a_sms.jar
+RIM-COD-URL: a_sms.cod
+RIM-COD-SHA1: e3 d1 86 03 de 85 82 18 63 6a a5 e5 c8 05 cf d1 4f 7f 7a 02
+RIM-COD-Size: 20092
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 4.5.0
+MIDlet-Name: a_sms
+MIDlet-Vendor: daemon@wo.com.cn
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

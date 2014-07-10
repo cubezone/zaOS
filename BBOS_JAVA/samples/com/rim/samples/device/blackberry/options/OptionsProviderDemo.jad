@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: OptionsProviderDemo
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bbapi_options
+MIDlet-Jar-Size: 4857
+RIM-COD-Creation-Time: 1278860436
+MIDlet-Jar-URL: OptionsProviderDemo.jar
+RIM-COD-URL: OptionsProviderDemo.cod
+RIM-Library-Flags: 3
+RIM-COD-SHA1: c1 8e 87 3a fb c7 d5 a0 6a 94 af 32 39 7e 91 7c 37 10 56 96
+RIM-COD-Size: 1820
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.0
+MIDlet-Name: OptionsProviderDemo
+MIDlet-Vendor: <unknown>
+MicroEdition-Profile: MIDP-2.0

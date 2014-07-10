@@ -1,0 +1,11 @@
+MIDlet-Name: ChapiDemo
+MIDlet-Version: 0.0
+MIDlet-Vendor: <unknown>
+MIDlet-Jar-URL: ChapiDemo.jar
+MIDlet-Jar-Size: 0
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-1: Chapi Demo,img/chapidemo_jde.png,
+RIM-MIDlet-Flags-1: 0
+MIDlet-2: ,,startup
+RIM-MIDlet-Flags-2: 3

@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+MIDlet-Version: 4.5.0
+MIDlet-Jar-Size: 146446
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: a_map.jar
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bbapi_invoke
+RIM-COD-URL-1: a_map-1.cod
+RIM-COD-SHA1-1: 01 c0 2f 41 5e 21 05 59 f0 b7 72 a6 d1 6d 24 25 48 a4 4f 24
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Size-1: 28984
+RIM-COD-Module-Name: a_map
+MIDlet-Name: a_map
+RIM-COD-Size: 53156
+RIM-COD-Creation-Time: 1282960156
+MIDlet-1: ChinaMap,,
+RIM-COD-URL: a_map.cod
+RIM-COD-SHA1: da 76 45 02 ee d3 13 d1 ec 42 5d bf e7 34 e9 99 dc 9a 8a 90
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: daemon@wo.com.cn

@@ -1,0 +1,9 @@
+MIDlet-Name: Za_Remote
+MIDlet-Version: 2.0.0
+MIDlet-Vendor: zhu xing yu
+MIDlet-Jar-URL: Za_Remote.jar
+MIDlet-Jar-Size: 0
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-1: za_remote,ipod-48x48.png,
+RIM-MIDlet-Flags-1: 0

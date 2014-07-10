@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+MIDlet-Version: 0.9
+MIDlet-Jar-Size: 32418
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: ContactsDemo.jar
+RIM-COD-Module-Dependencies: net_rim_cldc
+RIM-MIDlet-Flags-2: 3
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Module-Name: ContactsDemo
+MIDlet-Name: ContactsDemo
+RIM-COD-Size: 13976
+RIM-COD-Creation-Time: 1278860453
+MIDlet-2: Contacts Sample Autostartup,,autostartup
+MIDlet-1: Contacts Demo,img/contacts_jde.png,
+RIM-COD-URL: ContactsDemo.cod
+RIM-COD-SHA1: 46 08 bf b1 e8 e0 a3 7c ea 64 47 64 ff 5c c8 d5 a1 1f 00 17
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: Research In Motion Ltd.

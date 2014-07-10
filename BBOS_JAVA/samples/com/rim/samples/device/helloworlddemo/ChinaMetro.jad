@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+MIDlet-Version: 1.0
+MIDlet-Jar-Size: 78183
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: HelloWorldDemo.jar
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bbapi_invoke
+RIM-COD-URL-1: ChinaMetro-1.cod
+RIM-COD-SHA1-1: 89 1a 63 41 1b ea 05 3b cb 7b 28 f3 c3 ff df c9 e7 d6 b4 18
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Size-1: 19784
+RIM-COD-Module-Name: ChinaMetro
+MIDlet-Name: HelloWorldDemo
+RIM-COD-Size: 45268
+RIM-COD-Creation-Time: 1280135314
+MIDlet-1: Metro,img/helloworld_jde.png,
+RIM-COD-URL: ChinaMetro.cod
+RIM-COD-SHA1: 93 10 9a 41 2e 4f 33 c3 cb 1d b4 54 bb 69 34 45 4a 3a 66 70
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: daemon@wo.com.cn

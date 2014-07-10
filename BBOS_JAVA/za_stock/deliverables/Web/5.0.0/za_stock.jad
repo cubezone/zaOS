@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: za_stock
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_database,net_rim_xml,net_rim_xml_org,net_rim_bb_browser_field2_api
+MIDlet-Jar-Size: 59039
+MIDlet-1: ,stock.png,
+RIM-COD-Creation-Time: 1293680451
+MIDlet-Jar-URL: za_stock.jar
+RIM-COD-URL: za_stock.cod
+RIM-COD-SHA1: 3a 85 d3 13 7f 44 06 f3 ee 1b 7a 1f a0 f4 27 c3 94 85 c3 46
+RIM-COD-Size: 29824
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 1.0.0
+MIDlet-Name: za_stock
+MIDlet-Vendor: zhu xing yu
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

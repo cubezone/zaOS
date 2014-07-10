@@ -1,0 +1,8 @@
+MIDlet-Name: HTTPFilterDemo
+MIDlet-Version: 0.9
+MIDlet-Vendor: Research In Motion Ltd.
+MIDlet-Jar-URL: HTTPFilterDemo.jar
+MIDlet-Jar-Size: 0
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.1
+RIM-Library-Flags: 3

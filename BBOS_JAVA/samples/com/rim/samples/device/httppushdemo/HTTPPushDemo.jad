@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: HTTPPushDemo
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_os
+MIDlet-Jar-Size: 16282
+MIDlet-1: HTTP Push Demo,img/httppushdemo_jde.png,
+RIM-COD-Creation-Time: 1278860484
+MIDlet-Jar-URL: HTTPPushDemo.jar
+RIM-COD-URL: HTTPPushDemo.cod
+RIM-COD-SHA1: 74 af e1 a9 6e e1 31 49 fa 35 4b 13 2d 56 0c 32 47 e9 5a 0d
+RIM-COD-Size: 10080
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.9
+MIDlet-Name: HTTPPushDemo
+MIDlet-Vendor: Research In Motion Ltd.
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

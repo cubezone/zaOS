@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: SocketDemo
+RIM-COD-Module-Dependencies: net_rim_cldc
+MIDlet-Jar-Size: 18203
+MIDlet-1: Socket Demo,img/socketdemo_jde.png,
+RIM-COD-Creation-Time: 1278860547
+MIDlet-Jar-URL: SocketDemo.jar
+RIM-COD-URL: SocketDemo.cod
+RIM-COD-SHA1: e4 40 49 d9 25 7f 51 1c 22 cf 9e 6c b6 48 a5 0e a9 38 db 45
+RIM-COD-Size: 10812
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.9
+MIDlet-Name: SocketDemo
+MIDlet-Vendor: Research In Motion Ltd.
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

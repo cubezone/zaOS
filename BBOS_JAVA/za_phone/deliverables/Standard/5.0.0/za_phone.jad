@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+MIDlet-Version: 2.0.0
+MIDlet-Jar-Size: 140634
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: za_phone.jar
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bbapi_invoke,net_rim_database,net_rim_bbapi_phone
+RIM-COD-URL-1: za_phone-1.cod
+RIM-COD-SHA1-1: 25 78 60 ee a6 fc 5d 85 52 13 99 12 ea 53 0e 06 7f 43 55 4e
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Size-1: 22920
+RIM-COD-Module-Name: za_phone
+MIDlet-Name: za_phone
+RIM-COD-Size: 61908
+RIM-COD-Creation-Time: 1293275881
+MIDlet-1: za_phone,Phone_bigger.png,
+RIM-COD-URL: za_phone.cod
+RIM-COD-SHA1: 97 14 c1 2f 13 1b 29 fa e7 4e c7 cd 4c ca 11 05 42 a6 47 86
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: zhu xing yu

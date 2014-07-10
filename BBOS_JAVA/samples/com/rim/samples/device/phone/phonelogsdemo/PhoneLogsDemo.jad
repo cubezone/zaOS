@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: PhoneLogsDemo
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bbapi_phone
+MIDlet-Jar-Size: 50611
+MIDlet-1: Phone Logs Demo,img/phonelogsapidemo_jde.png,
+RIM-COD-Creation-Time: 1278860532
+MIDlet-Jar-URL: PhoneLogsDemo.jar
+RIM-COD-URL: PhoneLogsDemo.cod
+RIM-COD-SHA1: f2 ef 53 7e 26 c3 bb 02 58 04 5d 00 7f c1 11 8a 10 8d de 89
+RIM-COD-Size: 20212
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.9
+MIDlet-Name: PhoneLogsDemo
+MIDlet-Vendor: Research In Motion Ltd.
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

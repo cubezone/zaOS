@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+MIDlet-Version: 0.9
+MIDlet-Jar-Size: 12841
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: XMLDemo.jar
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_xml,net_rim_xml_org
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Module-Name: XMLDemo
+MIDlet-Name: XMLDemo
+RIM-COD-Size: 9432
+RIM-COD-Creation-Time: 1278860564
+MIDlet-1: XML Demo,img/xmldemo_jde.png,
+RIM-COD-URL: XMLDemo.cod
+RIM-MIDlet-NameResourceId-1: 0
+RIM-COD-SHA1: 39 1c 18 cb 3e 2c 48 db 11 b4 99 26 0f 10 fe 45 08 7a a6 9d
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: Research In Motion Ltd.
+RIM-MIDlet-NameResourceBundle-1: com.rim.samples.device.xmldemo.resources.XmlDemo

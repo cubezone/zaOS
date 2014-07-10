@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: ServiceRoutingDemo
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_os
+MIDlet-Jar-Size: 13719
+MIDlet-1: Service Routing Demo,img/serviceroutingdemo_jde.png,
+RIM-COD-Creation-Time: 1278860537
+MIDlet-Jar-URL: ServiceRoutingDemo.jar
+RIM-COD-URL: ServiceRoutingDemo.cod
+RIM-COD-SHA1: 81 bc 7f f0 1c 57 cc 74 12 b4 43 89 6d 0a 51 b3 f9 e5 a4 68
+RIM-COD-Size: 8824
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.0
+MIDlet-Name: ServiceRoutingDemo
+MIDlet-Vendor: <unknown>
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

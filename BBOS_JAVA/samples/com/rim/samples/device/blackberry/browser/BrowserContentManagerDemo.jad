@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: BrowserContentManagerDemo
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bb_browser_field_api,net_rim_os,CommonLib
+MIDlet-Jar-Size: 17048
+MIDlet-1: Browser Content Manager Demo,img/browsercontentmanagerdemo_jde.png,
+RIM-COD-Creation-Time: 1278860426
+MIDlet-Jar-URL: BrowserContentManagerDemo.jar
+RIM-COD-URL: BrowserContentManagerDemo.cod
+RIM-COD-SHA1: 26 34 d6 d1 ed e0 7e b0 e9 7e 23 30 8b 61 a0 14 45 f0 f9 d4
+RIM-COD-Size: 10684
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.0
+MIDlet-Name: BrowserContentManagerDemo
+MIDlet-Vendor: <unknown>
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

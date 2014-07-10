@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qnx>
+  <initialWindow>
+    <systemChrome>none</systemChrome>
+    <transparent>false</transparent>
+  </initialWindow>
+  <author>zhu xing yu</author>
+  <authorId>gYAAgLB3w0kYcYdEyFrkdHGG0E4</authorId>  
+  <publisher>zhu xing yu</publisher>
+  <action>access_internet</action>
+  <action>use_camera</action>
+  <action>access_shared</action>
+  <action>play_sound</action>
+  <buildId>19</buildId>
+  <icon>
+  	<image>cameragun.png</image>
+  </icon>
+  <splashscreen>cameraflash.png</splashscreen>
+</qnx>

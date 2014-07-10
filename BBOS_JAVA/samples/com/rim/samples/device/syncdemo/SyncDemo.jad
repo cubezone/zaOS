@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+MIDlet-Version: 0.0
+MIDlet-Jar-Size: 21269
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: SyncDemo.jar
+RIM-COD-Module-Dependencies: net_rim_cldc
+RIM-MIDlet-Flags-2: 3
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Module-Name: SyncDemo
+MIDlet-Name: SyncDemo
+RIM-COD-Size: 12420
+RIM-COD-Creation-Time: 1278860553
+MIDlet-2: ,,init
+MIDlet-1: Sync Demo,img/syncdemo_jde.png,
+RIM-COD-URL: SyncDemo.cod
+RIM-COD-SHA1: 2e 4b ed 0a f8 6e c9 51 2c 23 aa 63 08 2a 0c 64 61 be 2c 8e
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: <unknown>

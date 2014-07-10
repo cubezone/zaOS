@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+MIDlet-Version: 0.0
+MIDlet-Jar-Size: 28181
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: OTABackupRestoreDemo.jar
+RIM-COD-Module-Dependencies: net_rim_cldc
+RIM-MIDlet-Flags-2: 3
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Module-Name: OTABackupRestoreDemo
+MIDlet-Name: OTABackupRestoreDemo
+RIM-COD-Size: 13768
+RIM-COD-Creation-Time: 1278860522
+MIDlet-2: ,,init
+MIDlet-1: OTA Backup Restore Demo,img/otabackuprestoredemo_jde.png,
+RIM-COD-URL: OTABackupRestoreDemo.cod
+RIM-COD-SHA1: 50 af 35 03 89 91 16 ab fe c5 08 85 6b 01 1f 5d 54 15 ee eb
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: <unknown>

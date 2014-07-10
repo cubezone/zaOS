@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+MIDlet-Version: 0.9
+MIDlet-Jar-Size: 69872
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: HelloWorldDemo.jar
+RIM-COD-Module-Dependencies: net_rim_cldc
+RIM-COD-URL-1: HelloWorldDemo-1.cod
+RIM-COD-SHA1-1: b4 75 9e 6b c9 c7 cc 06 86 f0 99 28 66 b9 74 73 8f de b2 58
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Size-1: 25856
+RIM-COD-Module-Name: HelloWorldDemo
+MIDlet-Name: HelloWorldDemo
+RIM-COD-Size: 40248
+RIM-COD-Creation-Time: 1278586323
+MIDlet-1: Hello World Demo,img/helloworld_jde.png,
+RIM-COD-URL: HelloWorldDemo.cod
+RIM-COD-SHA1: 73 37 cf a2 2b ab 55 10 db 7a 9c 2e 28 73 56 da 68 e3 9e 76
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: Research In Motion Ltd.

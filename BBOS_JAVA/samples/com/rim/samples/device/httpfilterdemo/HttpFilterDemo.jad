@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: HttpFilterDemo
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_os
+MIDlet-Jar-Size: 12813
+RIM-COD-Creation-Time: 1278860481
+MIDlet-Jar-URL: HTTPFilterDemo.jar
+RIM-COD-URL: HttpFilterDemo.cod
+RIM-Library-Flags: 3
+RIM-COD-SHA1: b0 5d 6d 44 27 57 aa c7 3f 6d 45 37 6b 5f d9 74 c5 db a5 c8
+RIM-COD-Size: 7172
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.9
+MIDlet-Name: HTTPFilterDemo
+MIDlet-Vendor: Research In Motion Ltd.
+MicroEdition-Profile: MIDP-2.0

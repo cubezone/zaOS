@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+MIDlet-Version: 0.9
+MIDlet-Jar-Size: 24700
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: PhoneAPIDemo.jar
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bbapi_phone
+RIM-MIDlet-Flags-2: 3
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Module-Name: PhoneAPIDemo
+MIDlet-Name: PhoneAPIDemo
+RIM-COD-Size: 12236
+RIM-COD-Creation-Time: 1278944333
+MIDlet-2: ,,autostartup
+MIDlet-1: Phone API Demo,img/phoneapidemo_jde.png,
+RIM-COD-URL: PhoneAPIDemo.cod
+RIM-COD-SHA1: e3 01 e9 53 00 67 30 71 64 f8 8e 39 1d 6b 18 f9 ca 8b 04 3b
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: Research In Motion Ltd.

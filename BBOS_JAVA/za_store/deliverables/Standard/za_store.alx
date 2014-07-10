@@ -1,0 +1,31 @@
+<loader version="1.0">
+	<application id="za_store">
+		<name >
+			za_store
+		</name>
+		<description >
+			
+		</description>
+		<version >
+			2.0.0
+		</version>
+		<vendor >
+			BlackBerry Developer
+		</vendor>
+		<copyright >
+			Copyright (c) 2010 BlackBerry Developer
+		</copyright>
+		<fileset Java="1.49" _blackberryVersion="[5.0.0)">
+			<directory >
+				5.0.0
+			</directory>
+			<files >
+				za_store.cod
+
+			</files>
+
+		</fileset>
+
+	</application>
+
+</loader>

@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+MIDlet-Version: 0.0
+MIDlet-Jar-Size: 20586
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: NotificationsDemo.jar
+RIM-COD-Module-Dependencies: net_rim_cldc
+RIM-MIDlet-Flags-2: 3
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Module-Name: NotificationsDemo
+MIDlet-Name: NotificationsDemo
+RIM-COD-Size: 10908
+RIM-COD-Creation-Time: 1278860516
+MIDlet-2: ,,autostartup
+MIDlet-1: Notifications Demo,img/notificationsdemo_jde.png,
+RIM-COD-URL: NotificationsDemo.cod
+RIM-COD-SHA1: c8 aa c4 fc fc 42 03 e3 d3 86 e0 54 c4 be 33 b6 b2 8d 11 a6
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: <unknown>

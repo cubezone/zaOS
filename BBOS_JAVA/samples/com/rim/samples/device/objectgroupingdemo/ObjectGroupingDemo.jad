@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: ObjectGroupingDemo
+RIM-COD-Module-Dependencies: net_rim_cldc
+MIDlet-Jar-Size: 14334
+MIDlet-1: Object Grouping Demo,img/objectgroupingdemo_jde.png,
+RIM-COD-Creation-Time: 1278860519
+MIDlet-Jar-URL: ObjectGroupingDemo.jar
+RIM-COD-URL: ObjectGroupingDemo.cod
+RIM-COD-SHA1: 8b dd 24 7c e2 d0 45 45 d7 d8 2a f6 55 9a a6 83 c4 ea 7f d6
+RIM-COD-Size: 9304
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.0
+MIDlet-Name: ObjectGroupingDemo
+MIDlet-Vendor: <unknown>
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

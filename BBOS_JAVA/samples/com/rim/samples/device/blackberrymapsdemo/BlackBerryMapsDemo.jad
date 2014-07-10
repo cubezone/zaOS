@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: BlackBerryMapsDemo
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_pdap,net_rim_bbapi_invoke,net_rim_bbapi_maps
+MIDlet-Jar-Size: 25631
+MIDlet-1: BlackBerry Maps Demo,img/bbmapsdemo_jde.png,
+RIM-COD-Creation-Time: 1278860443
+MIDlet-Jar-URL: BlackBerryMapsDemo.jar
+RIM-COD-URL: BlackBerryMapsDemo.cod
+RIM-COD-SHA1: 63 fb b7 44 c3 b2 43 a0 1c 74 53 d8 8f c9 3b 6a a5 8d 18 eb
+RIM-COD-Size: 12744
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.0
+MIDlet-Name: BlackBerryMapsDemo
+MIDlet-Vendor: <unknown>
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

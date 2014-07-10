@@ -1,0 +1,12 @@
+<loader version="1.0">
+<application id="a_remote">
+<name>a_remote</name>
+<description>winloader alx maker</description>
+<version>1.0</version>
+<vendor>winloader</vendor>
+<copyright>Copyright (c) 2007  winloader</copyright>
+<fileset Java="1.0">
+<directory ></directory>
+<files>a_remote.cod</files></fileset>
+</application>
+</loader>

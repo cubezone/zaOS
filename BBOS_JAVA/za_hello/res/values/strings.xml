@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, za_hello!</string>
+    <string name="app_name">Android测试</string>
+    <string name="TextView01">hello</string>
+    <string name="EditText01">input</string>
+    <string name="Button01">ok</string>
+</resources>

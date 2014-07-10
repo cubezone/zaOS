@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: za_weather
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_database,net_rim_xml,net_rim_xml_org
+MIDlet-Jar-Size: 76294
+MIDlet-1: ,sunny.gif,
+RIM-COD-Creation-Time: 1293677568
+MIDlet-Jar-URL: za_weather.jar
+RIM-COD-URL: za_weather.cod
+RIM-COD-SHA1: d0 be 30 01 e9 df ca df db 5b 6e da 8c cb 7c d3 3a 4f 8c 41
+RIM-COD-Size: 34572
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 1.0.0
+MIDlet-Name: za_weather
+MIDlet-Vendor: zhu xing yu
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

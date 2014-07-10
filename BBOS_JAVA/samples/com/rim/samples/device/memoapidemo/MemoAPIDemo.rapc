@@ -1,0 +1,11 @@
+MIDlet-Name: MemoAPIDemo
+MIDlet-Version: 0.0
+MIDlet-Vendor: <unknown>
+MIDlet-Jar-URL: MemoAPIDemo.jar
+MIDlet-Jar-Size: 0
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-1: Memo API Demo,img/memoapidemo_jde.png,
+RIM-MIDlet-Flags-1: 0
+MIDlet-2: ,,init
+RIM-MIDlet-Flags-2: 3

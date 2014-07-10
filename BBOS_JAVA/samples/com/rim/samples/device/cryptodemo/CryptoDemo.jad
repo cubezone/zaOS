@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: CryptoDemo
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_crypto_1
+MIDlet-Jar-Size: 12325
+MIDlet-1: Crypto Demo,img/cryptodemo_jde.png,
+RIM-COD-Creation-Time: 1278860456
+MIDlet-Jar-URL: CryptoDemo.jar
+RIM-COD-URL: CryptoDemo.cod
+RIM-COD-SHA1: 06 e2 5d 73 9a b6 ab 14 0b 8b db 80 55 45 7b 09 91 84 15 ea
+RIM-COD-Size: 8604
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.9
+MIDlet-Name: CryptoDemo
+MIDlet-Vendor: Research In Motion Ltd.
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

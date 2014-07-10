@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: Za_Remote
+RIM-COD-Module-Dependencies: net_rim_cldc
+MIDlet-Jar-Size: 49443
+MIDlet-1: za_remote,ipod-48x48.png,
+RIM-COD-Creation-Time: 1292729135
+MIDlet-Jar-URL: Za_Remote.jar
+RIM-COD-URL: Za_Remote.cod
+RIM-COD-SHA1: 4b 1c 1e bf 97 04 fb ca 71 4d 25 37 ae 25 b7 4c ee e7 21 75
+RIM-COD-Size: 26808
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 2.0.0
+MIDlet-Name: Za_Remote
+MIDlet-Vendor: zhu xing yu
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

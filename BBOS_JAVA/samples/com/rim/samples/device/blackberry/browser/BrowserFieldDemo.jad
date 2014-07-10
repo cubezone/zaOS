@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: BrowserFieldDemo
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bb_browser_field_api,net_rim_os,CommonLib
+MIDlet-Jar-Size: 15663
+MIDlet-1: Browser Field Demo,img/browserfieldapidemo_jde.png,
+RIM-COD-Creation-Time: 1278860430
+MIDlet-Jar-URL: BrowserFieldDemo.jar
+RIM-COD-URL: BrowserFieldDemo.cod
+RIM-COD-SHA1: e3 67 8c 3b 39 f4 76 70 5d c6 91 f4 e5 75 56 a7 00 2f ca 95
+RIM-COD-Size: 10028
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.9
+MIDlet-Name: BrowserFieldDemo
+MIDlet-Vendor: Research In Motion Ltd.
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

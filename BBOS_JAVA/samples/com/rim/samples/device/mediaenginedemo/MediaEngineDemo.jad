@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+MIDlet-Version: 0.9
+MIDlet-Jar-Size: 97871
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: MediaEngineDemo.jar
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_plazmic_mediaengine
+RIM-COD-URL-1: MediaEngineDemo-1.cod
+RIM-COD-SHA1-1: 66 52 9a 21 1b a1 06 6a f0 9a 38 4e 5f 4d 3e 13 62 50 f0 c7
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Size-1: 4856
+RIM-COD-Module-Name: MediaEngineDemo
+MIDlet-Name: MediaEngineDemo
+RIM-COD-Size: 63176
+RIM-COD-Creation-Time: 1278860501
+MIDlet-1: Media Engine Demo,Images/mediaengine_jde.png,
+RIM-COD-URL: MediaEngineDemo.cod
+RIM-COD-SHA1: df 02 6d 42 f2 ae af 55 0c 42 2a 3b 63 d7 e9 d4 66 ae 0c e0
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: Research In Motion Ltd.

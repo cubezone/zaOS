@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" >
+<channel>
+<title>
+    路透: 股票</title>
+<link>http://cn.reuters.com/rssFeed/stocksNews</link>
+<description>路透中文网提供实时新闻，财经资讯和投资信息。路透社是全球最大的新闻通讯社之一，为全球媒体，金融实体，商业组织和个人提供新闻报道，金融资讯和相关技术方案。</description>
+<image>
+	<title>Reuters News</title>
+	<width>120</width>
+	<height>35</height>
+	<link>http://cn.reuters.com</link>
+	<url>http://cn.reuters.com/resources/images/reuters120.gif</url>
+</image>
+<language>en-us</language>
+<lastBuildDate>Thu, 09 Dec 2010 22:13:41 +0800</lastBuildDate>
+<copyright>All rights reserved. Users may download and print extracts of content from this website for their own personal and non-commercial use only. Republication or redistribution of Reuters content, including by framing or similar means, is expressly prohibited without the prior written consent of Reuters. Reuters and the Reuters sphere logo are registered trademarks or trademarks of the Reuters group of companies around the world. &#169; Reuters 2010</copyright>
+
+<item>
+		<title>〔东南亚股市〕多数收高,印尼股市创下纪录收盘高位</title>
+		
+	
+		<description>  路透科伦坡12月9日电---大多数东南亚股市周四录得较小升幅,其中印尼股市触及纪录高位,因当地投资者买进小盘银行股,因预期2011年业绩强劲.</description>
+		<link>http://cn.reuters.com/article/stocksNews/idCNnCN148218920101209?feedType=RSS&amp;feedName=stocksNews</link>
+        <guid isPermaLink="false">CNnCN148218920101209</guid>
+        <category>stocksNews</category>
+		<pubDate>Thu, 09 Dec 2010 19:51:40 +0800</pubDate>
+		</item>
+<item>
+		<title>〔中港股市〕上海股市受能源、银行板块拖累跌至两月低点,港股则小升</title>
+		
+	
+		<description>  路透香港/上海12月9日电---中国股市沪综指周四收跌1.3%,创近两个月来收盘新低.央行公开市场三年期央票今年来首次暂停发行,且加息敏感窗口临近,令政策紧缩担忧加深,投资者谨慎心态升温,而地产黄金等大盘股下挫,进一步刺激避险卖盘.</description>
+		<link>http://cn.reuters.com/article/stocksNews/idCNnCN148207320101209?feedType=RSS&amp;feedName=stocksNews</link>
+        <guid isPermaLink="false">CNnCN148207320101209</guid>
+        <category>stocksNews</category>
+		<pubDate>Thu, 09 Dec 2010 18:57:00 +0800</pubDate>
+		</item>
+<item>
+		<title>〔欧洲金融〕多数欧元区国家将达成或超越赤字目标</title>
+		
+	
+		<description>  &#034;在2010年,看来几乎所有须改善赤字问题的国家,大致都符合或优于欧盟财长会议建议的目标水准,&#034;该报告一篇关于财政发展的文章称.</description>
+		<link>http://cn.reuters.com/article/stocksNews/idCNnCT041089120101209?feedType=RSS&amp;feedName=stocksNews</link>
+        <guid isPermaLink="false">CNnCT041089120101209</guid>
+        <category>stocksNews</category>
+		<pubDate>Thu, 09 Dec 2010 18:32:06 +0800</pubDate>
+		</item>
+<item>
+		<title>〔投行观点〕德银料在港人民币存款未来两年可达2万亿元</title>
+		
+	
+		<description>  路透香港12月9日电---德意志银行周四发表报告称,预期届2012年底,香港的人民币存款可达2万亿元,而明年在港的人民币债券发行总量可达1,500亿元.</description>
+		<link>http://cn.reuters.com/article/stocksNews/idCNnCH008890220101209?feedType=RSS&amp;feedName=stocksNews</link>
+        <guid isPermaLink="false">CNnCH008890220101209</guid>
+        <category>stocksNews</category>
+		<pubDate>Thu, 09 Dec 2010 18:18:39 +0800</pubDate>
+		</item>
+<item>
+		<title>〔全球金融〕十家大型全球银行计划建立新的外汇交易平台--华尔街日报</title>
+		
+	
+		<description>  路透12月9日电---华尔街日报援引数位知情消息人士的话报导称,从事外汇交易的大型全球银行在筹备一个仅供银行使用的交易系统,以赢回失去的外汇交易业务.</description>
+		<link>http://cn.reuters.com/article/stocksNews/idCNnCN148182120101209?feedType=RSS&amp;feedName=stocksNews</link>
+        <guid isPermaLink="false">CNnCN148182120101209</guid>
+        <category>stocksNews</category>
+		<pubDate>Thu, 09 Dec 2010 17:54:50 +0800</pubDate>
+		</item>
+<item>
+		<title>〔欧洲经济〕欧元区经济有正面的基本动能,通胀仍受抑制--央行评论</title>
+		
+	
+		<description>  路透法兰克福12月9日电---欧洲央行周四在其月报的评论中称,欧元区经济有正面的基本动能,但通货膨胀压力仍受到抑制.</description>
+		<link>http://cn.reuters.com/article/stocksNews/idCNnCT041085320101209?feedType=RSS&amp;feedName=stocksNews</link>
+        <guid isPermaLink="false">CNnCT041085320101209</guid>
+        <category>stocksNews</category>
+		<pubDate>Thu, 09 Dec 2010 17:32:03 +0800</pubDate>
+		</item>
+<item>
+		<title>〔企业并购〕韩亚金融集团寻求外国投资者为收购韩国外换银行融资</title>
+		
+	
+		<description>  路透首尔12月9日电---韩亚金融集团周四表示,正在广泛寻求愿最高购买该公司9%股份的外国投资者,为该公司以41亿美元收购韩国外换银行融资.</description>
+		<link>http://cn.reuters.com/article/stocksNews/idCNnCN148180520101209?feedType=RSS&amp;feedName=stocksNews</link>
+        <guid isPermaLink="false">CNnCN148180520101209</guid>
+        <category>stocksNews</category>
+		<pubDate>Thu, 09 Dec 2010 17:31:35 +0800</pubDate>
+		</item>
+<item>
+		<title>〔欧洲金融〕德国政府高级经济顾问支持设立欧元区共同债券</title>
+		
+	
+		<description>  路透柏林12月9日电---德国政府高级经济顾问Peter Bofinger周四表示,支持创建欧元区共同债券,与德国总理梅克尔拒绝这一提议的立场相左.</description>
+		<link>http://cn.reuters.com/article/stocksNews/idCNnCN148177920101209?feedType=RSS&amp;feedName=stocksNews</link>
+        <guid isPermaLink="false">CNnCN148177920101209</guid>
+        <category>stocksNews</category>
+		<pubDate>Thu, 09 Dec 2010 17:08:25 +0800</pubDate>
+		</item>
+<item>
+		<title>〔香港个股〕中国海外发展11月房地产销售额按月减少26%</title>
+		
+	
+		<description>  路透香港12月9日电---中国大型房地产商--中国海外发展周四公布,11月的房地产销售额按月下跌25.7%;1-11月并完成全年销售面积目标的98%.</description>
+		<link>http://cn.reuters.com/article/stocksNews/idCNnCH008889620101209?feedType=RSS&amp;feedName=stocksNews</link>
+        <guid isPermaLink="false">CNnCH008889620101209</guid>
+        <category>stocksNews</category>
+		<pubDate>Thu, 09 Dec 2010 17:02:57 +0800</pubDate>
+		</item>
+<item>
+		<title>〔企业并购〕法国PPR拟出售家具部门Conforama,正与Steinhoff洽谈</title>
+		
+	
+		<description>  路透巴黎12月9日电---法国精品及零售集团PPR周四表示,该公司正与Steinhoff国际控股进行排他性谈判,讨论出售PPR旗下家具部门Conforama.</description>
+		<link>http://cn.reuters.com/article/stocksNews/idCNnCN148152320101209?feedType=RSS&amp;feedName=stocksNews</link>
+        <guid isPermaLink="false">CNnCN148152320101209</guid>
+        <category>stocksNews</category>
+		<pubDate>Thu, 09 Dec 2010 17:00:21 +0800</pubDate>
+		</item>
+</channel>
+</rss>
+

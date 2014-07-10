@@ -1,0 +1,9 @@
+MIDlet-Name: HTTPPushDemo
+MIDlet-Version: 0.9
+MIDlet-Vendor: Research In Motion Ltd.
+MIDlet-Jar-URL: HTTPPushDemo.jar
+MIDlet-Jar-Size: 0
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-1: HTTP Push Demo,img/httppushdemo_jde.png,
+RIM-MIDlet-Flags-1: 0

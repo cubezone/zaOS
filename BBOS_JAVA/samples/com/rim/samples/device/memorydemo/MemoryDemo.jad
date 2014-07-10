@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: MemoryDemo
+RIM-COD-Module-Dependencies: net_rim_cldc
+MIDlet-Jar-Size: 55358
+MIDlet-1: Memory Demo,img/memorydemo_jde.png,
+RIM-COD-Creation-Time: 1278860509
+MIDlet-Jar-URL: MemoryDemo.jar
+RIM-COD-URL: MemoryDemo.cod
+RIM-COD-SHA1: a3 c2 f5 fa 2b c2 df 01 9a e1 c6 97 22 c5 7c 82 f2 16 a3 5e
+RIM-COD-Size: 19392
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.9
+MIDlet-Name: MemoryDemo
+MIDlet-Vendor: Research In Motion Ltd.
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

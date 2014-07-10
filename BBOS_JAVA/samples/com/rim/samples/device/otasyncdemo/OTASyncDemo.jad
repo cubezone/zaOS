@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+MIDlet-Version: 0.0
+MIDlet-Jar-Size: 28530
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: OTASyncDemo.jar
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_os
+RIM-MIDlet-Flags-2: 3
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Module-Name: OTASyncDemo
+MIDlet-Name: OTASyncDemo
+RIM-COD-Size: 14272
+RIM-COD-Creation-Time: 1278860525
+MIDlet-2: ,,init
+MIDlet-1: OTA Sync Demo,img/otasyncdemo_jde.png,
+RIM-COD-URL: OTASyncDemo.cod
+RIM-COD-SHA1: c7 88 59 1d 58 6d 1d 24 40 a6 d2 67 0b 90 43 d9 f4 f4 76 5c
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: <unknown>

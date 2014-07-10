@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: za_rss
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_database,net_rim_xml,net_rim_xml_org,net_rim_bb_browser_field2_api
+MIDlet-Jar-Size: 76501
+MIDlet-1: ,rss_70.png,
+RIM-COD-Creation-Time: 1293603161
+MIDlet-Jar-URL: za_rss.jar
+RIM-COD-URL: za_rss.cod
+RIM-COD-SHA1: b2 98 96 35 67 8e ad d5 0d a5 0a 57 46 4a fe f3 c8 1f 77 2b
+RIM-COD-Size: 47368
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 1.0.0
+MIDlet-Name: za_rss
+MIDlet-Vendor: zhu xing yu
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

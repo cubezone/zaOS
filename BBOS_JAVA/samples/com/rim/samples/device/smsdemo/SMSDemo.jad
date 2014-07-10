@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: SMSDemo
+RIM-COD-Module-Dependencies: net_rim_cldc
+MIDlet-Jar-Size: 20797
+MIDlet-1: SMS Demo,img/smsdemo_jde.png,
+RIM-COD-Creation-Time: 1278860543
+MIDlet-Jar-URL: SmsDemo.jar
+RIM-COD-URL: SMSDemo.cod
+RIM-COD-SHA1: 95 5a 76 79 6f 71 37 45 33 19 c1 56 d8 f2 82 8b 1e c2 7a 69
+RIM-COD-Size: 11820
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.0
+MIDlet-Name: SmsDemo
+MIDlet-Description: A simple SMS sample demonstrating both send and receive
+MIDlet-Vendor: Research In Motion Ltd.
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

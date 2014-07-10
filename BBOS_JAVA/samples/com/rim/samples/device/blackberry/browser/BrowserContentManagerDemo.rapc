@@ -1,0 +1,9 @@
+MIDlet-Name: BrowserContentManagerDemo
+MIDlet-Version: 0.0
+MIDlet-Vendor: <unknown>
+MIDlet-Jar-URL: BrowserContentManagerDemo.jar
+MIDlet-Jar-Size: 0
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-1: Browser Content Manager Demo,img/browsercontentmanagerdemo_jde.png,
+RIM-MIDlet-Flags-1: 0

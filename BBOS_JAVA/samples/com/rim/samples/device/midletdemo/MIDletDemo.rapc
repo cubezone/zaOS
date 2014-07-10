@@ -1,0 +1,9 @@
+MIDlet-Name: MIDletDemo
+MIDlet-Version: 0.9
+MIDlet-Vendor: Research In Motion Ltd.
+MIDlet-Jar-URL: MIDletDemo.jar
+MIDlet-Jar-Size: 0
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-1: MIDlet Demo,img/midletdemo_jde.png,com.rim.samples.device.midletdemo.MIDletDemo
+RIM-MIDlet-Flags-1: 0

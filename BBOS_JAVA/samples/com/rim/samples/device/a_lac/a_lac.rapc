@@ -1,0 +1,9 @@
+MIDlet-Name: a_lac
+MIDlet-Version: 4.5.0
+MIDlet-Vendor: daemon@wo.com.cn
+MIDlet-Jar-URL: a_lac.jar
+MIDlet-Jar-Size: 0
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-1: ChinaLac,img/Picasa__32.png,
+RIM-MIDlet-Flags-1: 0

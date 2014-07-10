@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+MIDlet-Version: 0.0
+MIDlet-Jar-Size: 14662
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: ActiveTextFieldsDemo.jar
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bbapi_menuitem,net_rim_bbapi_stringpattern
+RIM-MIDlet-Flags-2: 3
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Module-Name: ActiveTextFieldsDemo
+MIDlet-Name: ActiveTextFieldsDemo
+RIM-COD-Size: 8784
+RIM-COD-Creation-Time: 1278860417
+MIDlet-2: ,,autostartup
+MIDlet-1: Active Text Fields Demo,img/activetextfields_jde.png,
+RIM-COD-URL: ActiveTextFieldsDemo.cod
+RIM-COD-SHA1: de 54 04 85 e8 84 d9 b3 ac 03 ec 04 1a 4b de d1 d0 e4 5f bb
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: <unknown>

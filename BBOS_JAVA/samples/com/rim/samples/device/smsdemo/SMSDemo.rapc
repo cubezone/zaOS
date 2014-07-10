@@ -1,0 +1,10 @@
+MIDlet-Name: SmsDemo
+MIDlet-Version: 0.0
+MIDlet-Vendor: Research In Motion Ltd.
+MIDlet-Description: A simple SMS sample demonstrating both send and receive
+MIDlet-Jar-URL: SmsDemo.jar
+MIDlet-Jar-Size: 0
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-1: SMS Demo,img/smsdemo_jde.png,
+RIM-MIDlet-Flags-1: 0

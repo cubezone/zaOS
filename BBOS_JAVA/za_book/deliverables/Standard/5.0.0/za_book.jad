@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+MIDlet-Version: 1.0.0
+MIDlet-Jar-Size: 131030
+RIM-COD-URL-2: za_book-2.cod
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: za_book.jar
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_database
+RIM-COD-SHA1-2: a8 e1 32 c8 ef a8 99 ec 9b cc 99 33 6c f1 3e 5f 35 02 c5 d0
+RIM-COD-URL-1: za_book-1.cod
+RIM-COD-SHA1-1: 5d 7a f2 47 75 e1 e9 c5 3c 87 1d 05 dc 75 1a 8a 9f 71 c2 34
+RIM-COD-Size-2: 32160
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Size-1: 48152
+RIM-COD-Module-Name: za_book
+MIDlet-Name: za_book
+RIM-COD-Size: 56892
+RIM-COD-Creation-Time: 1293269218
+MIDlet-1: ,Book-64.png,
+RIM-COD-URL: za_book.cod
+RIM-COD-SHA1: 11 b5 52 5e d0 67 ea 51 a6 7f d3 9c 08 86 02 f5 89 37 47 0d
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: zhu xing yu
