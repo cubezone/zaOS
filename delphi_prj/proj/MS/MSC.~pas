@@ -1,0 +1,407 @@
+unit MSC;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, ComCtrls, StdCtrls, jpeg;
+
+type
+  TMain = class(TForm)
+    SBar: TStatusBar;
+    Memo1: TMemo;
+    Label2: TLabel;
+    Label3: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    CheckBox1: TCheckBox;
+    Label1: TLabel;
+    Button1: TButton;
+    Button2: TButton;
+    Memo2: TMemo;
+    Label5: TLabel;
+    ComboBox1: TComboBox;
+    Edit4: TEdit;
+    Image1: TImage;
+    procedure Button1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
+    procedure CheckBox1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure ComboBox1Change(Sender: TObject);
+    procedure Image1MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
+    procedure Image1MouseUp(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
+    procedure Image1MouseMove(Sender: TObject; Shift: TShiftState; X,
+      Y: Integer);
+  private
+    function SEncodeMobNO(SmobNO: string): string;
+    function BIsArea(SmobNO: string): string;
+    function PduHead(SmobNO: string; IsSmc: boolean): string;
+    function EncodeEnglish(Input: string): string;
+    function EncodeChinese(Input: WideString): string;
+    function isEnglish(sms: string): boolean;
+    function MadeMsg(sms: string): string;
+    function MadeSMS(SMC, NoHand, DesMob, SMS: string): string;
+    function MadeSmsHead(Smc, NoHand, DesMobNo: string): string;
+    procedure OpenComm;
+    function SetMS(Handle: THandle; AtCommand: string): string;
+    function ReadCom: string;
+    function GetSMSLen(SMC, DesMob, SMS: string): integer;
+    function readFlag: string;
+
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Main: TMain;
+  hcomm: Thandle;
+  flag: boolean;
+  o_x,o_y :integer;
+implementation
+
+{$R *.dfm}
+
+{将手机号码以pdu的格式进行编码}
+
+function TMain.SEncodeMobNO(SmobNO: string): string;
+var
+  TempPchar: Pchar;
+  i: integer;
+  Str: string;
+begin
+  if (copy(smobno, 1, 1) = '+') then //判断是否包含国家编码
+    SmobNO := copy(smobno, 2, length(smobno) - 1); //去掉手机号码中的'+'
+
+  if ((length(SmobNO) mod 2) = 1) then
+    SmobNO := SmobNO + 'F';
+
+  TempPchar := Pchar(SmobNO); //将字符串 Char数组化
+
+  i := 0;
+  Str := '';
+  while i < length(TempPchar) do begin
+    Str := Str + TempPchar[i + 1] + TempPchar[i];
+    i := i + 2;
+  end;
+  result := Str;
+end;
+
+ 
+
+procedure TMain.opencomm;
+var cc: tcommconfig;
+  CommNO: string;
+begin
+  CommNO := 'COM4';
+  hcomm := CreateFile(pchar(CommNO), GENERIC_READ or GENERIC_WRITE, 0, nil, OPEN_EXISTING, 0, 0); //以读写方式打开com1
+  if (hcomm = invalid_handle_value) then
+  begin
+    messagebox(0, '打开通信端口失败,如有其他程序占用，请先关闭!', '', mb_ok);
+    exit;
+  end;
+
+  getcommstate(hcomm, cc.dcb);
+  cc.dcb.BaudRate := cbr_9600;
+  cc.dcb.ByteSize := 8;
+  cc.dcb.Parity := noparity;
+  cc.dcb.StopBits := onestopbit;
+
+  if not setcommstate(hcomm, cc.dcb) then
+  begin
+    messagebox(0, '通讯端口设置错误！！', '', mb_ok);
+    closehandle(hcomm);
+    exit;
+  end;
+end;
+
+ 
+
+function TMain.SetMS(Handle: THandle; AtCommand: string): string;
+var
+  lrc: longword;
+begin
+  WriteFile(Handle, pchar(AtCommand)^, length(AtCommand), lrc, nil);
+  sleep(200);
+  result := ReadCom;
+end;
+
+
+function TMain.readcom: string;
+var temp: string;
+  inbuff: array[0..10240] of char;
+  nbytesread, dwerror: longword;
+  cs: tcomstat;
+begin
+  clearcommerror(hcomm, dwerror, @cs);
+  if cs.cbInQue > sizeof(inbuff) then
+  begin
+    purgecomm(hcomm, purge_rxclear);
+    exit;
+  end;
+  readfile(hcomm, inbuff, cs.cbInQue, nbytesread, nil);
+  temp := copy(inbuff, 1, cs.cbInQue);
+  result := temp;
+end;
+
+{返回该手机编号的区位编码标志
+   SmobNO:string 手机号码}
+
+function TMain.BIsArea(SmobNO: string): string;
+var
+  Area: array[boolean] of pchar;
+  BFlag: boolean;
+begin
+  Area[true] := '91'; //有国家编码
+  Area[false] := '81'; //无国家编码
+  BFlag := false;
+  if (copy(smobno, 1, 1) = '+') then //判断是否包含国家编码
+    BFlag := true;
+  result := string(Area[Bflag]);
+end;
+
+procedure TMain.Button1Click(Sender: TObject);
+var s: string;
+  NoHand: string;
+  i : integer ;
+begin
+   i := 1;
+  s := 'AT+CMGF=0' + #13 + 'AT+CMGS=' + inttostr(GETSMSLEN(EDIT2.Text, EDIT1.Text, EDIT3.Text)) + #13;
+  s := SetMS(hcomm, s);
+  Memo1.Lines.Add(s);
+
+  if (isEnglish(EDIT3.Text)) then
+    NoHand := '0'
+  else
+    NoHand := '8';
+
+  if flag then
+    NoHand := '1' + NoHand
+  else
+    NoHand := '0' + NoHand;
+  while true do begin
+    i := i +1;
+    if i = 100 then
+        exit;
+    Application.ProcessMessages;
+    if (pos('>', s) <> 0) then begin
+      Memo1.Lines.Add(SetMS(hcomm, MadeSMS(EDIT2.Text, NoHand, EDIT1.Text, EDIT3.Text) + #26));
+      Memo1.Lines.Add(readFlag);
+      break;
+    end;
+  end;
+
+end;
+
+function TMain.readFlag(): string;
+var s: string;
+begin
+  s := '';
+  while true do begin
+    Application.ProcessMessages;
+    s := readcom;
+    if (pos('OK', s) <> 0) then begin
+      s := 'SMS Send success';
+      break;
+    end else if (pos('ERROR', s) <> 0) then begin
+      s := 'SMS Send Fault';
+      break;
+    end;
+  end;
+  result := s;
+end;
+
+//处理目标号码
+
+function TMain.PduHead(SmobNO: string; IsSmc: boolean): string;
+var
+  SMob: string;
+  IsArea: string;
+  i: integer;
+begin
+  smob := SEncodeMobNO(Smobno); //号码编码
+  IsArea := BIsArea(smobno); //取得国际格式标志
+
+  i := length(smob);
+  if not isSmc then begin
+    if ((copy(smob, length(smob) - 1, 1) = 'f') or (copy(smob, length(smob) - 1, 1) = 'F')) then //若号码的最后一位为'f',则长度-1
+      i := i - 1;
+  end else
+    i := length(IsArea + Smob) div 2;
+  result := format('%2.2x', [i]) + IsArea + smob;
+end;
+
+
+ //中文转ucs编码
+
+function TMain.EncodeChinese(Input: WideString): string;
+var //'蕾' -->  '857E'
+  i: Integer;
+begin
+  Result := '';
+  for i := 1 to Length(Input) do
+    Result := Result + Format('%4.4x', [ord(Input[i])]);
+end;
+
+ 
+
+ //英文转pdu编码
+
+function TMain.EncodeEnglish(Input: string): string;
+var
+  i, j, len: Integer;
+  cur: Integer;
+  t: string;
+begin
+  Result := '';
+  len := Length(Input);
+  i := 1;
+  j := 0; //j 用于移位计数
+  while i <= len do begin
+    if i < len then
+      cur := (ord(Input[i]) shr j) or ((ord(Input[i + 1]) shl (7 - j)) and $FF) //数据变换
+    else
+      cur := (ord(Input[i]) shr j) and $7F;
+    FmtStr(t, '%2.2x', [cur]);
+    Result := Result + t;
+    inc(i);
+    j := (j + 1) mod 7; //移位计数达到7位的特别处理
+    if j = 0 then inc(i);
+  end;
+end;
+
+function TMain.isEnglish(sms: string): boolean;
+var i: integer;
+begin
+  result := true;
+  for i := 0 to length(sms) do begin
+    if ord(sms[i]) > $80 then result := false;
+  end;
+end;
+
+function TMain.MadeMsg(sms: string): string;
+begin
+  result := '';
+  if (sms = '') then exit;
+  if (isEnglish(sms)) then begin
+    if length(sms) <= 160 then
+      result := EncodeEnglish(sms)
+  end else begin
+    if length(sms) <= 70 then
+      result := self.EncodeChinese(sms);
+  end;
+end;
+
+function TMain.MadeSmsHead(Smc, NoHand, DesMobNo: string): string;
+var SmcHead, desMob: string;
+  flagRep: string;
+
+begin
+  flagRep := '11'; //不需为11  需要状态报告31
+  SmcHead := '00';
+  if Smc <> '' then begin
+    SmcHead := PduHead(Smc, true);
+  end;
+  desMob := PduHead(DesMobNo, false);
+  result := smcHead + flagRep + '00' + desMob + '00' + NoHand + 'A7'
+end;
+
+procedure TMain.FormCreate(Sender: TObject);
+begin
+   edit4.Visible := false;
+  flag := false;
+  opencomm;
+//  sleep(100);
+  if (pos('OK', SetMS(hcomm, 'AT' + #13)) <> 0) then
+  begin
+        SBar.Panels[0].text :=  SetMS(hcomm, 'AT+GMM' + #13);
+        SBar.Panels[1].text := '已经连接上....'
+  end
+  else
+        SBar.Panels[1].text := '不能连接....';
+end;
+
+procedure TMain.FormDestroy(Sender: TObject);
+begin
+  CloseHandle(hcomm); //关闭com1句柄
+end;
+
+function TMain.GetSMSLen(SMC, DesMob, SMS: string): integer;
+begin
+  if self.isEnglish(sms) then
+    result := 5 + (length(PduHead(DesMob, false) + format('%2.2x', [length(MadeMsg(SMS)) * 8 div 14]) + MadeMsg(SMS))) div 2
+  else
+    result := 5 + (length(PduHead(DesMob, false) + format('%2.2x', [length(MadeMsg(SMS)) div 2]) + MadeMsg(SMS))) div 2
+end;
+
+function TMain.MadeSMS(SMC, NoHand, DesMob, SMS: string): string;
+begin
+  if self.isEnglish(sms) then
+    result := MadeSmsHead(SMC, NoHand, DesMob) + format('%2.2x', [length(MadeMsg(SMS)) * 8 div 14]) + MadeMsg(SMS)
+  else
+    result := MadeSmsHead(SMC, NoHand, DesMob) + format('%2.2x', [length(MadeMsg(SMS)) div 2]) + MadeMsg(SMS)
+end;
+
+procedure TMain.CheckBox1Click(Sender: TObject);
+begin
+  flag := CheckBox1.Checked;
+end;
+
+procedure TMain.Button2Click(Sender: TObject);
+var
+  s: string;
+begin
+   s := 'AT' + Combobox1.Text + #13;
+   if   Edit4.Visible then
+   s := 'AT' + Combobox1.Text + ' '+ edit4.Text + #13;
+   s := SetMS(hcomm, s);
+   Memo2.Clear;
+   Memo2.Lines.Add(s);
+end;
+
+procedure TMain.ComboBox1Change(Sender: TObject);
+begin
+        if ComboBox1.Text = '+CDV' then
+          Edit4.Visible := true
+        else
+          Edit4.Visible := false;
+end;
+
+procedure TMain.Image1MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+        image1.Tag := 1;
+        o_x:=x;
+        o_y:=y;
+end;
+
+procedure TMain.Image1MouseUp(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+        image1.Tag := 0;
+        image1.Left := image1.Left + x - o_x;
+                image1.Top  := image1.Top + y - o_y;
+end;
+
+procedure TMain.Image1MouseMove(Sender: TObject; Shift: TShiftState; X,
+  Y: Integer);
+  var
+        p :Tpoint;
+begin
+        if (image1.Tag = 1) then
+        begin
+             TMain(image1.Parent).Canvas.Refresh
+            TMain(image1.Parent).Canvas.DrawFocusRect(rect(
+                                image1.Left + x - o_x ,
+                                 image1.top  + y - o_y,
+                              image1.Left + x - o_x+ image1.Width,
+                               image1.top  + y - o_y+image1.Height));
+        end;
+end;
+
+end.
+

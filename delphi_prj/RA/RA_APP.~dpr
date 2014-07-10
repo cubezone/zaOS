@@ -1,0 +1,17 @@
+program RA_APP;
+
+uses
+  Forms,
+  RA in 'RA.pas' {Form1},
+  RA_Process in 'RA_Process.pas' {Form2},
+  RA_3 in 'RA_3.pas' {Form3};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TForm3, Form3);
+  Application.Run;
+end.

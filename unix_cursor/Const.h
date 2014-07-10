@@ -1,0 +1,110 @@
+#ifndef _CONSTH_
+#define _CONSTH_        1
+
+#ifndef SUCCEED
+#define SUCCEED 0
+#endif
+
+#ifndef FAIL
+#define FAIL    -1
+#endif
+
+#ifndef FINISH
+#define FINISH    1
+#endif
+
+#ifndef INVALID
+#define INVALID	 2
+#endif
+
+#ifndef ERREXIT
+#define ERREXIT	 -2
+#endif
+
+#define BUFLEN 1024
+
+#define MAX_APP_NAME_LEN   20
+
+#define MAX_USER_NAME_LEN      20
+
+#define MAX_PASS_WORD_LEN    20
+
+#define MAX_SERVER_NAME_LEN    20
+
+#define	MAX_WARN_REMARK_LEN	255
+
+#define	MAX_ERR_RMK_LEN	255
+
+#define	MAX_TBNAME_LEN	20
+
+#define MAXDIRLEN       60
+
+#define MAXPIDS	30
+
+#define EX_CTLIB_VERSION CS_VERSION_100
+
+
+
+#define	FTP_START_UP	1000
+
+#define	GET_CFG_PARAM_FAIL	1001
+
+#define	NO_VALUE_IN_TABLE	1002
+
+#define	FILE_OPEN_FAIL		1003
+
+#define	FILE_WRITE_FAIL		1004
+
+#define	FILE_RENAME_FAIL	1005
+
+#define CFG_VALUE_INVALID	1006
+
+#define CFG_VALUE_NOTFIND	1007
+
+#define	FILE_READ_FAIL		1008
+
+#define	FILE_UNLINK_FAIL	1009
+
+#define	INVALID_FILE_NAME	1010
+
+#define	PROC_ALREADY_EXIST	1011
+
+#define	INVADVAL_IN_TABLE	1012
+
+#define	PIPE_OPEN_FAIL		1013
+
+#define	FILE_SYSSTATGET_FAIL	1014
+
+#define	START_PARAM_FAIL	1015
+
+#define	FREE_SPACE_INSUF	1016
+
+#define	FTP_FAIL			1017
+
+#define FTP_EXIT			1999
+
+#define SYB_CONN_INI_FAIL	8001
+
+#define SYB_CONN_EXIT_FAIL	8002
+
+#define	APP_NAME_INVALID	8003
+
+#define	USER_NAME_INVALID	8005
+
+#define	PASS_WORD_INVALID	8006
+
+#define	SERVER_NAME_INVALID	8007
+
+#define	SYB_CMD_SEND_FAIL	8008
+
+#define	SYB_CMD_GET_FAIL	8009
+
+#define	SYB_TYPE_BIND_FAIL	8010
+
+#define	SYB_RESULT_FETCH_FAIL	8011
+
+#define	SYB_BLK_CPY_FAIL		8012
+
+#endif
+
+

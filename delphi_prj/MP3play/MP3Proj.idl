@@ -1,0 +1,394 @@
+[
+  uuid(A704F1BA-AF43-4C10-A437-4556F564A1B9), 
+  version(1.0), 
+  helpstring("HandBlogProj Library"), 
+  control
+    
+]
+library HandBlogProj
+{
+
+  importlib("STDOLE2.TLB");
+  importlib("stdvcl40.dll");
+
+  [
+    uuid(4C746089-5552-4C12-9094-BCEACD24AA66), 
+    version(1.0), 
+    helpstring("Events interface for HandBlog Control")
+  ]
+   dispinterface IHandBlogEvents
+  {
+    properties:
+    methods:
+    [
+    id(0x00000001)
+    ]
+    void OnActivate( void );
+    [
+    id(0x00000002)
+    ]
+    void OnClick( void );
+    [
+    id(0x00000003)
+    ]
+    void OnCreate( void );
+    [
+    id(0x00000005)
+    ]
+    void OnDblClick( void );
+    [
+    id(0x00000006)
+    ]
+    void OnDestroy( void );
+    [
+    id(0x00000007)
+    ]
+    void OnDeactivate( void );
+    [
+    id(0x0000000B)
+    ]
+    void OnKeyPress([in, out] short * Key );
+    [
+    id(0x00000010)
+    ]
+    void OnPaint( void );
+  };
+
+  [
+    uuid(14CEF024-FB7E-4B99-9957-EAD234CDC1C7), 
+    version(1.0), 
+    helpstring("HandBlog Control"), 
+    control
+  ]
+  coclass HandBlog
+  {
+    [default] interface IHandBlog;
+    [default, source] dispinterface IHandBlogEvents;
+  };
+
+  [
+    uuid(42FF25FA-670D-43C9-8802-5931E3F776FC), 
+    version(1.0)
+  ]
+  typedef enum tagTxActiveFormBorderStyle
+  {
+    [
+    helpstring("afbNone")
+    ]
+    afbNone = 0, 
+    [
+    helpstring("afbSingle")
+    ]
+    afbSingle = 1, 
+    [
+    helpstring("afbSunken")
+    ]
+    afbSunken = 2, 
+    [
+    helpstring("afbRaised")
+    ]
+    afbRaised = 3
+  } TxActiveFormBorderStyle;
+
+  [
+    uuid(28F4AB77-C393-4590-8E8E-11850601AB10), 
+    version(1.0)
+  ]
+  typedef enum tagTxPrintScale
+  {
+    [
+    helpstring("poNone")
+    ]
+    poNone = 0, 
+    [
+    helpstring("poProportional")
+    ]
+    poProportional = 1, 
+    [
+    helpstring("poPrintToFit")
+    ]
+    poPrintToFit = 2
+  } TxPrintScale;
+
+  [
+    uuid(B51F110A-467C-444B-B4C7-F79BB4193B01), 
+    version(1.0)
+  ]
+  typedef enum tagTxMouseButton
+  {
+    [
+    helpstring("mbLeft")
+    ]
+    mbLeft = 0, 
+    [
+    helpstring("mbRight")
+    ]
+    mbRight = 1, 
+    [
+    helpstring("mbMiddle")
+    ]
+    mbMiddle = 2
+  } TxMouseButton;
+
+  [
+    uuid(EC5DFC81-09C5-45D1-A6B8-ECBAF9DA2E06), 
+    version(1.0)
+  ]
+  typedef enum tagTxHelpType
+  {
+    [
+    helpstring("htKeyword")
+    ]
+    htKeyword = 0, 
+    [
+    helpstring("htContext")
+    ]
+    htContext = 1
+  } TxHelpType;
+
+  
+  typedef  struct tag IFontDisp ** PPUserType1;
+
+  [
+    uuid(4C45DAD4-50B7-46B7-BF24-A2CB96370D62), 
+    version(1.0), 
+    helpstring("Dispatch interface for HandBlog Control"), 
+    dual, 
+    oleautomation
+  ]
+   interface IHandBlog: IDispatch
+  {
+    [
+    propget, 
+    id(0x00000001), 
+    hidden
+    ]
+    HRESULT _stdcall Visible([out, retval] VARIANT_BOOL * Value );
+    [
+    propput, 
+    id(0x00000001), 
+    hidden
+    ]
+    HRESULT _stdcall Visible([in] VARIANT_BOOL Value );
+    [
+    propget, 
+    id(0x00000002)
+    ]
+    HRESULT _stdcall AutoScroll([out, retval] VARIANT_BOOL * Value );
+    [
+    propput, 
+    id(0x00000002)
+    ]
+    HRESULT _stdcall AutoScroll([in] VARIANT_BOOL Value );
+    [
+    propget, 
+    id(0x00000003)
+    ]
+    HRESULT _stdcall AutoSize([out, retval] VARIANT_BOOL * Value );
+    [
+    propput, 
+    id(0x00000003)
+    ]
+    HRESULT _stdcall AutoSize([in] VARIANT_BOOL Value );
+    [
+    propget, 
+    id(0x00000004)
+    ]
+    HRESULT _stdcall AxBorderStyle([out, retval] TxActiveFormBorderStyle * Value );
+    [
+    propput, 
+    id(0x00000004)
+    ]
+    HRESULT _stdcall AxBorderStyle([in] TxActiveFormBorderStyle Value );
+    [
+    propget, 
+    id(0xFFFFFDFA)
+    ]
+    HRESULT _stdcall Caption([out, retval] BSTR * Value );
+    [
+    propput, 
+    id(0xFFFFFDFA)
+    ]
+    HRESULT _stdcall Caption([in] BSTR Value );
+    [
+    propget, 
+    id(0xFFFFFE0B)
+    ]
+    HRESULT _stdcall Color([out, retval] OLE_COLOR * Value );
+    [
+    propput, 
+    id(0xFFFFFE0B)
+    ]
+    HRESULT _stdcall Color([in] OLE_COLOR Value );
+    [
+    propget, 
+    id(0xFFFFFE00)
+    ]
+    HRESULT _stdcall Font([out, retval] IFontDisp ** Value );
+    [
+    propput, 
+    id(0xFFFFFE00)
+    ]
+    HRESULT _stdcall Font([in] IFontDisp * Value );
+    [
+    propputref, 
+    id(0xFFFFFE00)
+    ]
+    HRESULT _stdcall Font([in] IFontDisp ** Value );
+    [
+    propget, 
+    id(0x00000005)
+    ]
+    HRESULT _stdcall KeyPreview([out, retval] VARIANT_BOOL * Value );
+    [
+    propput, 
+    id(0x00000005)
+    ]
+    HRESULT _stdcall KeyPreview([in] VARIANT_BOOL Value );
+    [
+    propget, 
+    id(0x00000006)
+    ]
+    HRESULT _stdcall PixelsPerInch([out, retval] long * Value );
+    [
+    propput, 
+    id(0x00000006)
+    ]
+    HRESULT _stdcall PixelsPerInch([in] long Value );
+    [
+    propget, 
+    id(0x00000007)
+    ]
+    HRESULT _stdcall PrintScale([out, retval] TxPrintScale * Value );
+    [
+    propput, 
+    id(0x00000007)
+    ]
+    HRESULT _stdcall PrintScale([in] TxPrintScale Value );
+    [
+    propget, 
+    id(0x00000008)
+    ]
+    HRESULT _stdcall Scaled([out, retval] VARIANT_BOOL * Value );
+    [
+    propput, 
+    id(0x00000008)
+    ]
+    HRESULT _stdcall Scaled([in] VARIANT_BOOL Value );
+    [
+    propget, 
+    id(0x00000009), 
+    hidden
+    ]
+    HRESULT _stdcall Active([out, retval] VARIANT_BOOL * Value );
+    [
+    propget, 
+    id(0x0000000A), 
+    hidden
+    ]
+    HRESULT _stdcall DropTarget([out, retval] VARIANT_BOOL * Value );
+    [
+    propput, 
+    id(0x0000000A), 
+    hidden
+    ]
+    HRESULT _stdcall DropTarget([in] VARIANT_BOOL Value );
+    [
+    propget, 
+    id(0x0000000B), 
+    hidden
+    ]
+    HRESULT _stdcall HelpFile([out, retval] BSTR * Value );
+    [
+    propput, 
+    id(0x0000000B), 
+    hidden
+    ]
+    HRESULT _stdcall HelpFile([in] BSTR Value );
+    [
+    propget, 
+    id(0x0000000C), 
+    hidden
+    ]
+    HRESULT _stdcall DoubleBuffered([out, retval] VARIANT_BOOL * Value );
+    [
+    propput, 
+    id(0x0000000C), 
+    hidden
+    ]
+    HRESULT _stdcall DoubleBuffered([in] VARIANT_BOOL Value );
+    [
+    propget, 
+    id(0x0000000D), 
+    hidden
+    ]
+    HRESULT _stdcall AlignDisabled([out, retval] VARIANT_BOOL * Value );
+    [
+    propget, 
+    id(0x0000000E), 
+    hidden
+    ]
+    HRESULT _stdcall VisibleDockClientCount([out, retval] long * Value );
+    [
+    propget, 
+    id(0xFFFFFDFE), 
+    hidden
+    ]
+    HRESULT _stdcall Enabled([out, retval] VARIANT_BOOL * Value );
+    [
+    propput, 
+    id(0xFFFFFDFE), 
+    hidden
+    ]
+    HRESULT _stdcall Enabled([in] VARIANT_BOOL Value );
+    [
+    propget, 
+    id(0x0000000F)
+    ]
+    HRESULT _stdcall Cursor([out, retval] short * Value );
+    [
+    propput, 
+    id(0x0000000F)
+    ]
+    HRESULT _stdcall Cursor([in] short Value );
+    [
+    propget, 
+    id(0x00000010)
+    ]
+    HRESULT _stdcall HelpType([out, retval] TxHelpType * Value );
+    [
+    propput, 
+    id(0x00000010)
+    ]
+    HRESULT _stdcall HelpType([in] TxHelpType Value );
+    [
+    propget, 
+    id(0x00000011)
+    ]
+    HRESULT _stdcall HelpKeyword([out, retval] BSTR * Value );
+    [
+    propput, 
+    id(0x00000011)
+    ]
+    HRESULT _stdcall HelpKeyword([in] BSTR Value );
+    [
+    propget, 
+    id(0x00000012)
+    ]
+    HRESULT _stdcall host([out, retval] long * Value );
+    [
+    propput, 
+    id(0x00000012)
+    ]
+    HRESULT _stdcall host([in] long Value );
+    [
+    id(0x00000013)
+    ]
+    HRESULT _stdcall change([in] BSTR name );
+    [
+    id(0x00000014)
+    ]
+    HRESULT _stdcall cc([in] long cc, [in, out] BSTR * ee );
+  };
+
+}; 

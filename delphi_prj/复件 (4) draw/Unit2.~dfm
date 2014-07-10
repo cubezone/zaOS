@@ -1,0 +1,19 @@
+object FormFull: TFormFull
+  Left = 194
+  Top = 130
+  BorderStyle = bsNone
+  Caption = 'FormFull'
+  ClientHeight = 599
+  ClientWidth = 807
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 13
+end

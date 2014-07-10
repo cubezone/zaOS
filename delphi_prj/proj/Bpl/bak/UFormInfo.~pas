@@ -1,0 +1,39 @@
+unit UFormInfo;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Grids, ValEdit,Uobj;
+
+type
+  TFormInfo = class(TForm)
+    VLE: TValueListEditor;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure ShowObjInfo(obj:Tobj);
+  end;
+
+var
+  FormInfo: TFormInfo;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFormInfo.ShowObjInfo(obj:Tobj);
+begin
+      while VLE.RowCount > 2 do
+        VLE.DeleteRow(1);
+      VLE.InsertRow('m_name',obj.m_name,true);
+      VLE.InsertRow('m_sourcename',obj.m_sourcename,true);
+      VLE.InsertRow('m_targetname',obj.m_targetname,true);
+      VLE.InsertRow('ClassName',obj.ClassName,true);
+      VLE.InsertRow('m_x',inttostr(obj.m_x),true);
+      VLE.InsertRow('m_y',inttostr(obj.m_y),true);
+      VLE.InsertRow('m_sx',inttostr(obj.m_sx),true);
+      VLE.InsertRow('m_sy',inttostr(obj.m_sy),true);
+end;
+end.

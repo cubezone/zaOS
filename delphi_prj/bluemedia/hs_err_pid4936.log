@@ -1,0 +1,151 @@
+#
+# An unexpected error has been detected by HotSpot Virtual Machine:
+#
+#  EXCEPTION_STACK_OVERFLOW (0xc00000fd) at pc=0x6d7b6f93, pid=4936, tid=5840
+#
+# Java VM: Java HotSpot(TM) Client VM (1.5.0_09-b03 mixed mode)
+# Problematic frame:
+# V  [jvm.dll+0x86f93]
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00a79350):  JavaThread "Thread-0" [_thread_in_vm, id=5840]
+
+siginfo: ExceptionCode=0xc00000fd, ExceptionInformation=0x00000001 0x0b34cbc8 
+
+Registers:
+EAX=0x00003000, EBX=0x0b34fd84, ECX=0x0b34cbc8, EDX=0x0b316048
+ESP=0x0b34fbd0, EBP=0x0b34fc30, ESI=0x00000003, EDI=0x0b34fbc8
+EIP=0x6d7b6f93, EFLAGS=0x00010202
+
+Top of Stack: (sp=0x0b34fbd0)
+0x0b34fbd0:   0acecee0 00a79350 6d7b6e3c 06db6c60
+0x0b34fbe0:   00a79350 0aceced0 6d785973 00000002
+0x0b34fbf0:   6d785915 0acecee0 0acecee0 6d7f8830
+0x0b34fc00:   0acecee0 0acecedc 00a79350 0b34fc48
+0x0b34fc10:   6d7f9ace 0aceced4 0aceced8 0acecedc
+0x0b34fc20:   0acecee0 00000007 0b34fd8c 00ae75d0
+0x0b34fc30:   0b34fc74 6d80dead 0000000a 00000000
+0x0b34fc40:   0b34fce4 0aceced0 06db6c60 00a79350 
+
+Instructions: (pc=0x6d7b6f93)
+0x6d7b6f83:   88 6d 7c 18 e8 24 5e 05 00 0f af c6 8b cf 2b c8
+0x6d7b6f93:   83 21 00 46 3b 35 84 00 88 6d 7e e8 5f 5e c3 8b 
+
+
+Stack: [0x0b310000,0x0b350000),  sp=0x0b34fbd0,  free space=254k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x86f93]
+V  [jvm.dll+0xddead]
+V  [jvm.dll+0x86d55]
+V  [jvm.dll+0x86ab2]
+V  [jvm.dll+0xa16b2]
+V  [jvm.dll+0x10f4ac]
+V  [jvm.dll+0x10f47a]
+C  [MSVCRT.dll+0x2a3b0]
+C  [kernel32.dll+0xb699]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+=>0x00a79350 JavaThread "Thread-0" [_thread_in_vm, id=5840]
+  0x0aca0550 JavaThread "Thread-1" daemon [_thread_in_native, id=1900]
+  0x00035ad8 JavaThread "DestroyJavaVM" [_thread_blocked, id=5320]
+  0x0aca1408 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=712]
+  0x0aca08f0 JavaThread "AWT-Windows" daemon [_thread_in_native, id=6048]
+  0x00aa71d0 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=4964]
+  0x00ab3d48 JavaThread "CompilerThread0" daemon [_thread_blocked, id=1188]
+  0x00ab3128 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=3840]
+  0x00a99148 JavaThread "Finalizer" daemon [_thread_blocked, id=5792]
+  0x00a97ce0 JavaThread "Reference Handler" daemon [_thread_blocked, id=184]
+
+Other Threads:
+  0x00a95230 VMThread [id=2920]
+  0x00aa83b0 WatcherThread [id=1384]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 640K, used 34K [0x02ae0000, 0x02b90000, 0x02fc0000)
+  eden space 576K,   6% used [0x02ae0000, 0x02ae8b60, 0x02b70000)
+  from space 64K,   0% used [0x02b70000, 0x02b70000, 0x02b80000)
+  to   space 64K,   0% used [0x02b80000, 0x02b80000, 0x02b90000)
+ tenured generation   total 8220K, used 1718K [0x02fc0000, 0x037c7000, 0x06ae0000)
+   the space 8220K,  20% used [0x02fc0000, 0x0316db58, 0x0316dc00, 0x037c7000)
+ compacting perm gen  total 8192K, used 4115K [0x06ae0000, 0x072e0000, 0x0aae0000)
+   the space 8192K,  50% used [0x06ae0000, 0x06ee4c40, 0x06ee4e00, 0x072e0000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x0040d000 	C:\Sun\SDK\jdk\bin\java.exe
+0x7c920000 - 0x7c9b6000 	C:\WINDOWS\system32\ntdll.dll
+0x7c800000 - 0x7c91d000 	C:\WINDOWS\system32\kernel32.dll
+0x77da0000 - 0x77e49000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x77e50000 - 0x77ee2000 	C:\WINDOWS\system32\RPCRT4.dll
+0x77fc0000 - 0x77fd1000 	C:\WINDOWS\system32\Secur32.dll
+0x77be0000 - 0x77c38000 	C:\WINDOWS\system32\MSVCRT.dll
+0x6d730000 - 0x6d8cb000 	C:\Sun\SDK\jdk\jre\bin\client\jvm.dll
+0x77d10000 - 0x77d9f000 	C:\WINDOWS\system32\USER32.dll
+0x77ef0000 - 0x77f38000 	C:\WINDOWS\system32\GDI32.dll
+0x76b10000 - 0x76b3a000 	C:\WINDOWS\system32\WINMM.dll
+0x76300000 - 0x7631d000 	C:\WINDOWS\system32\IMM32.DLL
+0x62c20000 - 0x62c29000 	C:\WINDOWS\system32\LPK.DLL
+0x73fa0000 - 0x7400b000 	C:\WINDOWS\system32\USP10.dll
+0x6d2f0000 - 0x6d2f8000 	C:\Sun\SDK\jdk\jre\bin\hpi.dll
+0x76bc0000 - 0x76bcb000 	C:\WINDOWS\system32\PSAPI.DLL
+0x6d700000 - 0x6d70c000 	C:\Sun\SDK\jdk\jre\bin\verify.dll
+0x6d370000 - 0x6d38d000 	C:\Sun\SDK\jdk\jre\bin\java.dll
+0x6d720000 - 0x6d72f000 	C:\Sun\SDK\jdk\jre\bin\zip.dll
+0x6d200000 - 0x6d22f000 	C:\Sun\SDK\jdk\jre\bin\cmm.dll
+0x6d430000 - 0x6d44f000 	C:\Sun\SDK\jdk\jre\bin\jpeg.dll
+0x6d070000 - 0x6d1d9000 	C:\Sun\SDK\jdk\jre\bin\awt.dll
+0x72f70000 - 0x72f96000 	C:\WINDOWS\system32\WINSPOOL.DRV
+0x76990000 - 0x76acd000 	C:\WINDOWS\system32\ole32.dll
+0x5adc0000 - 0x5adf7000 	C:\WINDOWS\system32\uxtheme.dll
+0x736d0000 - 0x73719000 	C:\WINDOWS\system32\ddraw.dll
+0x73b30000 - 0x73b36000 	C:\WINDOWS\system32\DCIMAN32.dll
+0x0b070000 - 0x0b0e0000 	C:\Program Files\360\360safe\safemon\safemon.dll
+0x7d590000 - 0x7dd83000 	C:\WINDOWS\system32\SHELL32.dll
+0x77f40000 - 0x77fb6000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x770f0000 - 0x7717b000 	C:\WINDOWS\system32\OLEAUT32.dll
+0x762f0000 - 0x762f5000 	C:\WINDOWS\system32\MSIMG32.dll
+0x75ff0000 - 0x76055000 	C:\WINDOWS\system32\MSVCP60.dll
+0x3e410000 - 0x3e4e1000 	C:\WINDOWS\system32\WININET.dll
+0x0b0f0000 - 0x0b0f9000 	C:\WINDOWS\system32\Normaliz.dll
+0x3eab0000 - 0x3eaf5000 	C:\WINDOWS\system32\iertutil.dll
+0x77bd0000 - 0x77bd8000 	C:\WINDOWS\system32\VERSION.dll
+0x71a20000 - 0x71a37000 	C:\WINDOWS\system32\WS2_32.dll
+0x71a10000 - 0x71a18000 	C:\WINDOWS\system32\WS2HELP.dll
+0x77180000 - 0x77283000 	C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2982_x-ww_ac3f9c03\comctl32.dll
+0x5d170000 - 0x5d20a000 	C:\WINDOWS\system32\comctl32.dll
+0x74680000 - 0x746cb000 	C:\WINDOWS\system32\MSCTF.dll
+0x73640000 - 0x7366e000 	C:\WINDOWS\system32\msctfime.ime
+0x6d2b0000 - 0x6d2ef000 	C:\Sun\SDK\jdk\jre\bin\fontmanager.dll
+
+VM Arguments:
+java_command: PngMate -resize 45% c:\\ppt\\8.bmp
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.;C:\Program Files\QuickTime\QTSystem\QTJava.zip
+PATH=D:\Program Files\WinAVR\bin;C:\oracle\product\10.2.0\db_1\bin;D:\Program Files\WinAVR\utils\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Common Files\Thunder Network\KanKan\Codecs;C:\Program Files\QuickTime\QTSystem\;D:\PROGRA~1\Borland\Delphi6\Bin;D:\PROGRA~1\Borland\Delphi6\Projects\Bpl;D:\Program Files\MySQL\MySQL Server 5.0\bin;C:\Sun\SDK\bin;C:\Sun\SDK\jdk\bin;D:\Program Files\Apache Group\php5.2;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\StormII\Codec;C:\Program Files\StormII
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 13 Stepping 6, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows XP Build 2600 Service Pack 2
+
+CPU:total 1 (cores per cpu 1, threads per core 1) family 6 model 13 stepping 6, cmov, cx8, fxsr, mmx, sse, sse2
+
+Memory: 4k page, physical 785328k(71012k free), swap 1357920k(28680k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.5.0_09-b03) for windows-x86, built on Oct 12 2006 01:20:10 by "java_re" with MS VC++ 6.0
+
