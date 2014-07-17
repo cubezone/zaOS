@@ -213,17 +213,32 @@ int main()
 	font_t* font;
 	
     glfwSetErrorCallback(error_callback);
+    int va,vb,vc;
+   glfwGetVersion (&va,&vb,&vc); 
+    	fprintf(stderr,"version  a:%d b:%d c:%d\n",va,vb,vc);
 
     if (!glfwInit())
         exit(EXIT_FAILURE);
     int w  = 1000;
-    int  h = 500;
-    window = glfwCreateWindow(w, h, "", NULL, NULL);
+    int  h = 500;  
+     int monc;
+     GLFWmonitor ** mon=glfwGetMonitors(&monc) ; 
+     //monc =1;
+     glfwWindowHint( GLFW_AUTO_ICONIFY  ,  GL_FALSE);
+    const  GLFWvidmode * vid = glfwGetVideoMode(mon[monc-1]); 
+     w =vid->width;
+     h = vid->height ;
+    window = glfwCreateWindow(w,h, "",mon[monc-1] , NULL);     
+    //window = glfwCreateWindow(w,h, "",NULL , NULL);     
+           
     if (!window)
     {
         glfwTerminate();
         exit(EXIT_FAILURE);
     }
+	int wa,wb;
+	glfwGetWindowPos  (window,&wa,&wb);
+	fprintf(stderr,"windwos  x:%d y:%d w:%d h:%d\n",wa,wb,w,h);
 
     glfwMakeContextCurrent(window);
     set_swap_interval(window, 0);
@@ -262,7 +277,7 @@ int main()
 	fprintf(stderr, "GL EEE %i %d\n", err);   
 		initialized = 1; 
 		
-	font = load_font("TungusFont_Tinet.ttf",40,82) ;
+	font = load_font("TungusFont_Tinet.ttf",80,82) ;
 	
    if ( 1==2 )
     {		
@@ -317,16 +332,15 @@ int main()
 
       // glRotatef(180*cosf((float) glfwGetTime() * 1.f),0.0f,1.0f,0.0f);
 
-    /*           
         position = cosf((float) glfwGetTime() * 4.f) * 0.75f;
         position =  0.f;
         glColor3f (1.0, 1.0, 0.0); 
-        glRectf(position - 2.25f, -2.f, position + 2.25f, 2.f);
+        glRectf(position - 202.f, -202.f, position + 202.f, 202.f);
             
         glColor4f (1.0, 0.0, 1.0,0.5); 
-        glTranslatef(0.0f, 0.0f,1.0f);
-        glRectf(position - 1.5f, -0.5f, position - 0.4f, 0.5f);
- */   
+        glTranslatef(0.0f, 0.0f,10.0f);
+        glRectf(position - 150.f, -50.f, position -40.f, 50.f);
+
   /*
   		for (int i = 0 ;  i < 10 ;i ++ )
   		{
@@ -1196,8 +1210,9 @@ void render_text(font_t* font, const char* msg, float x, float y)
 	glGetIntegerv(GL_BLEND_SRC, &gl_blend_src);
 	glGetIntegerv(GL_BLEND_DST, &gl_blend_dst);
 
-	glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
-	//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	//glBlendFunc(GL_ZERO, GL_ONE_MINUS_SRC_ALPHA);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	//glBlendFunc(GL_ONE, GL_SRC_ALPHA);
 
 	int vertex_array_enabled;
 	glGetIntegerv(GL_VERTEX_ARRAY, &vertex_array_enabled);
