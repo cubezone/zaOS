@@ -88,7 +88,7 @@ int read_JPEG2_file (const char * filename,int w,int h) ;
 font_t* load_font(const char* path, int point_size, int dpi) ;
 void render_text(font_t* font, const char* msg, float x, float y);
 void destroy_font(font_t* font) ;
-
+void DrawR() ;
 
 static int initialized = 0; 
 
@@ -223,13 +223,13 @@ int main()
     int  h = 500;  
      int monc;
      GLFWmonitor ** mon=glfwGetMonitors(&monc) ; 
-     //monc =1;
-     glfwWindowHint( GLFW_AUTO_ICONIFY  ,  GL_FALSE);
+     //monc =2;
+    //glfwWindowHint( GLFW_AUTO_ICONIFY  ,  GL_FALSE);
     const  GLFWvidmode * vid = glfwGetVideoMode(mon[monc-1]); 
      w =vid->width;
      h = vid->height ;
-    window = glfwCreateWindow(w,h, "",mon[monc-1] , NULL);     
-    //window = glfwCreateWindow(w,h, "",NULL , NULL);     
+    //window = glfwCreateWindow(w,h, "",mon[monc-1] , NULL);     
+    window = glfwCreateWindow(w,h, "",NULL , NULL);     
            
     if (!window)
     {
@@ -249,7 +249,7 @@ int main()
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
     glfwSetKeyCallback(window, key_callback);
 
-    glClearColor(0.1f , 0.1f , 0.1f , 0.5f );     
+ //   glClearColor(0.1f , 0.1f , 0.1f , 0.5f );     
 	 
 	glViewport(0  ,0  ,w,h); 
 
@@ -277,7 +277,7 @@ int main()
 	fprintf(stderr, "GL EEE %i %d\n", err);   
 		initialized = 1; 
 		
-	font = load_font("TungusFont_Tinet.ttf",80,82) ;
+	font = load_font("CALIBRI.TTF",50,82) ;
 	
    if ( 1==2 )
     {		
@@ -291,9 +291,9 @@ int main()
                   m_height =4; 
 	}	
 	else 		
-		{
-				m_width = 800;
-               m_height = 600; 
+	{
+				m_width = 600;
+               m_height = 1024; 
 	         read_JPEG2_file("cc.jpeg", m_width, m_height);
 	}
 	
@@ -332,15 +332,19 @@ int main()
 
       // glRotatef(180*cosf((float) glfwGetTime() * 1.f),0.0f,1.0f,0.0f);
 
+		DrawR ();  
+	
         position = cosf((float) glfwGetTime() * 4.f) * 0.75f;
-        position =  0.f;
+        position =  0.f; 
+        glEnable(GL_BLEND); 
+  		glBlendFunc(GL_DST_ALPHA, GL_ZERO);  
         glColor3f (1.0, 1.0, 0.0); 
         glRectf(position - 202.f, -202.f, position + 202.f, 202.f);
             
         glColor4f (1.0, 0.0, 1.0,0.5); 
         glTranslatef(0.0f, 0.0f,10.0f);
         glRectf(position - 150.f, -50.f, position -40.f, 50.f);
-
+        glDisable(GL_BLEND); 
   /*
   		for (int i = 0 ;  i < 10 ;i ++ )
   		{
@@ -385,7 +389,9 @@ int main()
   				
   	
   		      DrawImg(-250,0,0.1f);               	
-  		       render_text (font,"A b cDE",-10,10); 
+  		    
+  		    		glColor4f(1.0f, 0.6f, 1.3f, 1.0f);
+  		       render_text (font,"a d EGSD EF :-",-10,10); 
   		   
   		      	     
           glPopMatrix();
@@ -889,11 +895,21 @@ int read_JPEG2_file (const char * filename,int w,int h)
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 
     glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
-
-
+/*
+   for (int i = 5 ;i < cinfo.output_width-5 ;i ++)
+    for (int l = 5 ;l< cinfo.output_height-5 ;l ++)
+    {  image_data[l*cinfo.output_width*3 +i*3]=(image_data[l*cinfo.output_width*3 +i*3+15] +image_data[l*cinfo.output_width*3 +i*3-15])/2;
+      image_data[l*cinfo.output_width*3 +i*3+1]=(image_data[l*cinfo.output_width*3 +i*3+1+15] +image_data[l*cinfo.output_width*3 +i*3-15+1])/2; 
+       image_data[l*cinfo.output_width*3 +i*3+2]=(image_data[l*cinfo.output_width*3 +i*3+2+15] +image_data[l*cinfo.output_width*3 +i*3-15+2])/2; 
+     }  
+     */
+     //glTexImage2D(GL_TEXTURE_2D, 0, format, 600,1024, 0, format, GL_UNSIGNED_BYTE, image_data);
+    
     glTexImage2D(GL_TEXTURE_2D, 0, format, tex_width, tex_height, 0, format, GL_UNSIGNED_BYTE, NULL);
-    glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, cinfo.output_width, cinfo.output_height, format, GL_UNSIGNED_BYTE, image_data);
-
+    glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, cinfo.output_width, cinfo.output_height-300, format, GL_UNSIGNED_BYTE, image_data);
+    glTexSubImage2D(GL_TEXTURE_2D, 0, 0, cinfo.output_height-200, cinfo.output_width,200 , format, GL_UNSIGNED_BYTE, image_data);
+  
+    
     GLint err = glGetError();
 
     free(image_data);
@@ -1312,3 +1328,35 @@ void destroy_font(font_t* font)
 
 	free(font);
 }
+
+void DrawR()
+{
+	GLfloat PII=3.141592f;
+
+	glEnableClientState(GL_VERTEX_ARRAY);
+	glColor4f(1.0f, 0.6f, 0.3f, 1.0f);
+	glLineWidth(2.0f);
+	GLfloat v[200];
+	glEnable(GL_BLEND); 
+  //	glBlendFunc(GL_ZERO, GL_ONE_MINUS_SRC_ALPHA);  
+  
+	for (GLfloat angle = 0.0f; angle <= 2*PII ; angle += 0.005f )
+	{
+		glPushMatrix();
+		v[1]  = 1.0f*sin(angle);
+		v[0]  = 1.0f*cos(angle);
+
+		v[2] = 0.0f;
+		v[3]=  0.0f;
+
+		glVertexPointer(2, GL_FLOAT, 0, v);
+		glTranslatef(-100.0f, 100.0f, -6.0f);
+		glScalef(80.0f, 220.0f, 1.0f);
+		glRotatef(45.0f,0.0f,0.0f,1.0f);
+		glDrawArrays(GL_LINES, 0, 2);
+
+		glPopMatrix();
+	}
+	glDisable(GL_BLEND); 
+	glDisableClientState(GL_VERTEX_ARRAY);
+}	
